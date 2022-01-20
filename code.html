@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+</head>
+<body>
+    <h2>&lt;code&gt;</h2>
+    <p>Элемент &lt;code&gt; (от англ. code &ndash; код) предназначен для отображения одной или нескольких строк текста, который представляет собой программный код. Сюда относятся имена переменных, ключевые слова, тексты функции и т. д. Браузеры обычно отображают содержимое контейнера &lt;code&gt; как моноширинный текст уменьшенного размера.
+    <br>
+    В отличие от элемента &lt;pre&gt; дополнительные пробелы внутри контейнера &lt;code&gt; не учитываются, так же, как и переносы текста. Для разметки кода программы элементы &lt;code&gt; и &lt;pre&gt; комбинируют.</p>
+    <h3>Синтаксис</h3>
+    <hr>
+    <strong>&lt;code&gt;</strong>Текст<strong>&lt;/code&gt;</strong>
+    <hr>
+    <h3>Пример</h3>
+    <hr>
+    <em>&lt;code&gt;Текст&lt;/code&gt;</em>
+    <p><code>function checkParent (src, dest) {
+        while (src != null) {
+          if (src.tagName == dest) return src
+          src = src.parentElement
+        }
+        return null
+      }</code></p>
+    <br>
+    <em>&lt;pre&gt;&lt;code&gt;Текст&lt;/code&gt;&lt;/pre&gt;</em>
+    <p><pre><code>function checkParent (src, dest) {
+        while (src != null) {
+          if (src.tagName == dest) return src
+          src = src.parentElement
+        }
+        return null
+      }</code></pre></p>
+    <br><br><br>
+    <a href="index.html" title="Справочник HTML">назад</a>
+</body>
+</html>
