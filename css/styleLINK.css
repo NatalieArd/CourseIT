@@ -1,0 +1,36 @@
+a {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+div.SPOSOB1 a {
+    margin: 0 10px 0 10px;
+}
+
+span {
+    border-right: 3px solid red;
+}
+
+td {
+    border-right: 3px solid red;
+    padding: 10px;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+div.SPOSOB3 a {
+    display: inline-block;
+    border-right: 3px solid red;
+    padding: 10px;
+}
+
+div a:last-child {
+    border-right: none;
+}
+
+

@@ -1,0 +1,12 @@
+.rating span {
+    float: right;
+}
+
+.rating span:hover {
+    content: url('../img/star1.png');
+    
+}
+
+.rating span:hover ~ span {
+    content: url('../img/star1.png');
+} 
