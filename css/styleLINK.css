@@ -1,25 +1,30 @@
-a {
+div.SPOSOB1 a {
+    margin: 0 10px 0 10px;
     color: green;
 }
 
-a:hover {
-    color: red;
-}
-
-div.SPOSOB1 a {
-    margin: 0 10px 0 10px;
-}
-
-span {
+div.SPOSOB1 span {
     border-right: 3px solid red;
 }
 
-td {
+div.SPOSOB1 a:hover {
+    color: red;
+}
+
+div.SPOSOB2 td {
     border-right: 3px solid red;
     padding: 10px;
 }
 
-td:last-child {
+div.SPOSOB2 a {
+    color: green;
+}
+
+div.SPOSOB2 a:hover {
+    color: red;
+}
+
+div.SPOSOB2 td:last-child {
     border-right: none;
 }
 
@@ -27,10 +32,13 @@ div.SPOSOB3 a {
     display: inline-block;
     border-right: 3px solid red;
     padding: 10px;
+    color: green;
 }
 
-div a:last-child {
+div.SPOSOB3 a:hover {
+    color: red;
+}
+
+div.SPOSOB3 a:last-child {
     border-right: none;
 }
-
-

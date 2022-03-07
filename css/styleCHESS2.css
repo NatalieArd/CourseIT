@@ -1,5 +1,5 @@
 #SLIDE .NAME {
-    font-size: 150%; 
+    font-size: 150%;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -9,12 +9,12 @@ p.BIRTHDAY {
 }
 
 p.CHAMPION {
-    color: red; 
+    color: red;
     font-weight: bold;
 }
 
 p.INFO {
-    color: blue; 
+    color: blue;
     font-weight: italic;
 }
 
@@ -23,20 +23,23 @@ p.INFO {
 }
  */
 
- #SLIDE p {
-     margin: 0;
- }
+#SLIDE p {
+    margin: 0;
+}
 
- a:hover {
-     text-decoration: none;
-     color: red;
-     font-weight: bold;
- }
+a:hover {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
 
 a {
     text-decoration: none;
     color: blue;
     font-weight: bold;
 }
- 
 
+[href^='https://'] {
+    background: url('../img/extref.png') no-repeat left;
+    padding-left: 10px;
+}
