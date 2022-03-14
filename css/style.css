@@ -10,11 +10,11 @@
     font-size: 20px;
 }
 
-.main {
+/* .main {
     padding-bottom: 1.5em;
     margin-bottom: 1.5em;
 
-}
+} */
 
 div {
     text-align: justify;
@@ -42,15 +42,14 @@ h3.title {
     .menu {
         width: 185px;
         float: left;
-        
+
     }
 
     .main {
-        /* margin-left: 200px; */
+        margin-left: 200px;
         padding-bottom: 1.5em;
         margin-bottom: 1.5em;
         width: 80%;
-        float: right;
     }
 
     .cup {
