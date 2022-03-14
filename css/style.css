@@ -82,7 +82,8 @@ h3.title {
     }
 
     .menu {
-        background-color: #f8e48c;
+        background: url('img/font.png') left top repeat-y;
+        width: 185px;
     }
 
 
