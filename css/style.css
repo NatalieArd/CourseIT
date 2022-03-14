@@ -2,11 +2,6 @@
     background: url('img/font.png') left top repeat-y;
 } */
 
-.Content {
-    background: url('img/football.png') repeat-y right top;
-    float: right;
-}
-
 .Hat {
     text-align: center;
     padding: 20px;
@@ -42,17 +37,18 @@ h3.title {
     width: 100%;
 }
 
-@media all and (min-width: 40em) {
+@media all and (min-width: 935px) {
     .menu {
-        width: 15%;
+        width: 185px;
         float: left;
+        
     }
 
     .main {
         /* margin-left: 200px; */
         padding-bottom: 1.5em;
         margin-bottom: 1.5em;
-        width: 84%;
+        width: 80%;
         float: right;
     }
 
@@ -65,10 +61,16 @@ h3.title {
     .Body {
         background: url('img/font.png') left top repeat-y;
     }
+
+    .Content {
+        background: url('img/football.png') repeat-y right top;
+        float: right;
+    }
+
 }
 
 
-@media all and (max-width: 40em) {
+@media all and (max-width: 935px) {
 
     .Hat {
         visibility: hidden;
@@ -77,5 +79,10 @@ h3.title {
     .Basement {
         visibility: hidden;
     }
+
+    .menu {
+        background-color: #f8e48c;
+    }
+
 
 }
