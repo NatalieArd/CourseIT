@@ -13,6 +13,7 @@
 .main {
     padding-bottom: 1.5em;
     margin-bottom: 1.5em;
+
 }
 
 div {
@@ -73,11 +74,11 @@ h3.title {
 @media all and (max-width: 935px) {
 
     .Hat {
-        visibility: hidden;
+        display: none;
     }
 
     .Basement {
-        visibility: hidden;
+        display: none;
     }
 
     .menu {
