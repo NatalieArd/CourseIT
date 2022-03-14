@@ -1,0 +1,81 @@
+/* div.Body {
+    background: url('img/font.png') left top repeat-y;
+} */
+
+.Content {
+    background: url('img/football.png') repeat-y right top;
+    float: right;
+}
+
+.Hat {
+    text-align: center;
+    padding: 20px;
+    background-color: #add8e6;
+    color: blue;
+    font-size: 20px;
+}
+
+.main {
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+div {
+    text-align: justify;
+}
+
+h3.title {
+    text-align: center;
+}
+
+.Basement {
+    clear: both;
+    background-color: #add8e6;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cup {
+    float: left;
+    width: 100%;
+}
+
+@media all and (min-width: 40em) {
+    .menu {
+        width: 15%;
+        float: left;
+    }
+
+    .main {
+        /* margin-left: 200px; */
+        padding-bottom: 1.5em;
+        margin-bottom: 1.5em;
+        width: 84%;
+        float: right;
+    }
+
+    .cup {
+        width: 20em;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .Body {
+        background: url('img/font.png') left top repeat-y;
+    }
+}
+
+
+@media all and (max-width: 40em) {
+
+    .Hat {
+        visibility: hidden;
+    }
+
+    .Basement {
+        visibility: hidden;
+    }
+
+}
