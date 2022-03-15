@@ -81,9 +81,18 @@ h3.title {
     }
 
     .menu {
-        background: url('img/font.png') left top repeat-y;
-        width: 185px;
+        background-color: #f8e48c;
+        width: 100%;
+        display: inline-block;
+        margin: 0;
     }
 
+    ul.hr {
+        padding: 0;
+    }
+
+    ul.hr li {
+        display: inline;
+    }
 
 }
