@@ -16,6 +16,18 @@
 
 } */
 
+.add {
+    position: absolute; 
+    right: 5mm; 
+    top: 10mm; 
+    text-align: center; 
+    border: solid; 
+    background: green; 
+    width: 90px; 
+    padding: 15px;
+}
+
+
 div {
     text-align: justify;
 }
@@ -35,12 +47,10 @@ h3.title {
 
 .cup {
     float: left;
-    width: 100%;
 }
 
-@media all and (min-width: 935px) {
     .menu {
-        width: 185px;
+        width: 200px;
         float: left;
 
     }
@@ -49,17 +59,18 @@ h3.title {
         margin-left: 200px;
         padding-bottom: 1.5em;
         margin-bottom: 1.5em;
-        width: 80%;
+        /* idth: 80%; */
     }
 
-    .cup {
+ /*    .cup {
         width: 20em;
         float: left;
         margin-right: 1em;
-    }
+    } */
 
     .Body {
         background: url('img/font.png') left top repeat-y;
+        position: static;
     }
 
     .Content {
@@ -67,32 +78,28 @@ h3.title {
         float: right;
     }
 
-}
 
-
-@media all and (max-width: 935px) {
-
+/* @media all and (max-width: 935px) {
+/* 
     .Hat {
         display: none;
     }
 
     .Basement {
         display: none;
-    }
+    } */
 
-    .menu {
+    /* .menu {
         background-color: #f8e48c;
         width: 100%;
         display: inline-block;
         margin: 0;
-    }
+    } */
 
-    ul.hr {
+/*     ul.hr {
         padding: 0;
     }
 
     ul.hr li {
         display: inline;
-    }
-
-}
+    } */
