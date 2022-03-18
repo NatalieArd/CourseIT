@@ -2,19 +2,10 @@
     background: url('img/font.png') left top repeat-y;
 } */
 
-.Hat {
-    text-align: center;
-    padding: 20px;
-    background-color: #add8e6;
-    color: blue;
-    font-size: 20px;
+.Body {
+    background: url('img/font.png') left top repeat-y;
+    position: static;
 }
-
-/* .main {
-    padding-bottom: 1.5em;
-    margin-bottom: 1.5em;
-
-} */
 
 .add {
     position: absolute; 
@@ -27,13 +18,38 @@
     padding: 15px;
 }
 
+.Hat {
+    text-align: center;
+    padding: 20px;
+    background-color: #add8e6;
+    color: blue;
+    font-size: 20px;
+}
 
-div {
-    text-align: justify;
+.Content {
+    background: url('img/football.png') repeat-y right top;
+    float: right;
+}
+
+.menu {
+    width: 200px;
+    float: left;
+}
+
+.main {
+    margin-left: 200px;
+    /* padding-bottom: 1.5em;
+    margin-bottom: 1.5em; */
+    /* idth: 80%; */
 }
 
 h3.title {
     text-align: center;
+}
+
+.cup {
+    float: left;
+    width: 200px;
 }
 
 .Basement {
@@ -45,22 +61,18 @@ h3.title {
     padding: 20px;
 }
 
-.cup {
-    float: left;
+div {
+    text-align: justify;
 }
 
-    .menu {
-        width: 200px;
-        float: left;
 
-    }
 
-    .main {
-        margin-left: 200px;
-        padding-bottom: 1.5em;
-        margin-bottom: 1.5em;
-        /* idth: 80%; */
-    }
+
+
+
+    
+
+    
 
  /*    .cup {
         width: 20em;
@@ -68,15 +80,9 @@ h3.title {
         margin-right: 1em;
     } */
 
-    .Body {
-        background: url('img/font.png') left top repeat-y;
-        position: static;
-    }
+    
 
-    .Content {
-        background: url('img/football.png') repeat-y right top;
-        float: right;
-    }
+    
 
 
 /* @media all and (max-width: 935px) {
