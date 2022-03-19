@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/MAKET_FORM.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Для публикации нашей статьи заполните, пожалуйста, следующую форму: <br><br>
+        <form method="post" action="Reply.php">
+            <div class="row">
+                <div class="col-25">Название статьи:</div>
+                <div class="col-75"><input type="text" name="title" class="title"> </div>
+                </div>
+                <div class="row">
+                <div class="col-25">Рубрика:</div>
+                <div class="col-75"><select name="rubric">
+                    <option value="1">Программирование</option>
+                    <option value="2">Компьютерная графика</option>
+                    <option value="3">Тестирование</option>
+                    <option value="4">Системное администрирование</option>
+                </select></div>
+            </div>
+            <div class="row">
+                <div class="col-25">Публикация:</div>
+                <div class="col-75"><input type="radio" name="choose">на сайте
+                    <input type="radio" name="choose" >в журнале
+                    <input type="radio" name="choose" >на сайте и в журнале</div>
+                    </div>
+                    <div class="row">
+                <div class="col-25">Разрешить комментарии:</div>
+                <div class="col-75"><input type="checkbox" name="allow" checked></div>
+            </div>
+            <div>
+                Текст статьи: <br>
+                <textarea name="article"></textarea><br>
+                <input type="submit" value="Опубликовать">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
