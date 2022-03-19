@@ -1,16 +1,40 @@
+.Hat {
+    margin-bottom: 15px;
+}
+
 .title {
-    width: 80%;
+    width: 100%;
 }
 
-.col-25 {
+.floatLeft {
     float: left;
-  width: 25%;
-  margin-top: 6px;
 }
 
-.col-75 {
-    float: left;
-  width: 75%;
-  margin-top: 6px;
-    
+
+@media (min-width: 940px) {
+    .col-15 {
+        float: left;
+        width: 15%;
+        margin-top: 6px;
+    }
+
+    .col-85 {
+        float: left;
+        width: 85%;
+        margin-top: 6px;
+    }
+
+    .visibility {
+        display: none;
+    }
+
+}
+
+.article {
+    display: inline-block;
+    width: 100%;
+}
+
+.Footer {
+    clear: both;
 }
