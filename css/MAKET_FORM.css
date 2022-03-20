@@ -10,17 +10,24 @@
     float: left;
 }
 
+.col-15 {
+    margin-top: 6px;
+}
 
-@media (min-width: 940px) {
+.col-85 {
+    margin-top: 6px;
+}
+
+
+@media (min-width: 950px) {
     .col-15 {
         float: left;
-        width: 15%;
+        width: 11em;
         margin-top: 6px;
     }
 
     .col-85 {
-        float: left;
-        width: 85%;
+        margin-left: 11em;
         margin-top: 6px;
     }
 

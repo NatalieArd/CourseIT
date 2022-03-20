@@ -4,11 +4,11 @@
 
 .Body {
     background: url('img/font.png') left top repeat-y;
-    position: static;
+    /* position: static; */
 }
 
 .add {
-    position: absolute; 
+    position: fixed; 
     right: 5mm; 
     top: 10mm; 
     text-align: center; 
