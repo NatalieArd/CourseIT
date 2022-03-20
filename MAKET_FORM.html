@@ -30,26 +30,26 @@
             <div class="row">
                 <div class="col-15">Публикация:</div>
                 <div class="col-85">
-                    <input type="radio" name="choose">на сайте 
+                    <input type="radio" name="choose">на сайте
                     <br class="visibility">
-                    <input type="radio" name="choose">в журнале 
+                    <input type="radio" name="choose">в журнале
                     <br class="visibility">
                     <input type="radio" name="choose">на сайте и в журнале
                 </div>
             </div>
-            <div class="row">
-                <div class="col-15">Разрешить комментарии:</div>
-                <div class="col-85"><input type="checkbox" name="allow" checked></div>
-                <div style="clear: both;"></div>
-            </div>
+        </form>
     </div>
-    <div class="Footer">
-        Текст статьи:
-        <textarea name="article" class="article"></textarea><br>
-        <input type="submit" value="Опубликовать">
-    </div>
+    <form method="post" action="Reply.php" style="margin-top: 6px;">
+        <div class="col-17">Разрешить комментарии: <input type="checkbox" name="allow" checked></div>
+        <div style="clear: both;"></div>
+        </div>
+        </div>
+        <div class="Footer">
+            Текст статьи:
+            <textarea name="article" class="article"></textarea><br>
+            <input type="submit" value="Опубликовать">
+        </div>
     </form>
-    </div>
 </body>
 
 </html>

@@ -18,23 +18,36 @@
     margin-top: 6px;
 }
 
+select {
+    width: 100%;
+}
 
-@media (min-width: 950px) {
+
+@media (min-width: 700px) {
     .col-15 {
         float: left;
-        width: 11em;
+        width: 10em;
         margin-top: 6px;
     }
 
     .col-85 {
-        margin-left: 11em;
+        margin-left: 10.7em;
         margin-top: 6px;
+    }
+
+    select {
+        width: 200px;
     }
 
     .visibility {
         display: none;
     }
 
+    .col-17 {
+        float: left;
+        width: 12em;
+        margin-top: 6px;
+    }
 }
 
 .article {
