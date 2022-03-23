@@ -1,0 +1,12 @@
+#svg_3:hover {
+    opacity: 0.3;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+}
+
+#svg_8:hover {
+    fill: aqua;
+    stroke-dasharray: 7,3,1,3;
+}
+
