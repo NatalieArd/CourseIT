@@ -1,0 +1,46 @@
+.Hat {
+    text-align: center;
+    padding: 20px;
+    background-color: #add8e6;
+    color: blue;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+}
+
+.menu {
+    flex-basis: 200px;
+    flex-grow: 0;
+    background: #f8e48c;
+}
+
+.article {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.cup {
+    float: left;
+    width: 200px;
+}
+
+h3.title {
+    text-align: center;
+}
+
+
+.Basement {
+    clear: both;
+    background-color: #add8e6;
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+div {
+    text-align: justify;
+}
+
