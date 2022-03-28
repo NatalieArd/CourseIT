@@ -26,6 +26,30 @@
     }
 }
 
+@-webkit-keyframes MyAnimation2 {
+    from {
+        background-color: rgb(56, 204, 130);
+        color: rgb(94, 55, 236)
+    }
+
+    50% {
+        background-color: rgb(166, 255, 0);
+        color: rgb(0, 238, 255)
+    }
+
+    to {
+        background-color: rgb(255, 81, 0);
+        color: rgb(13, 119, 13)
+    }
+}
+
+
+
+.main:hover .font{
+    animation:
+    MyAnimation2 1s infinite
+}
+
 .main:hover .circle {
     border-radius: 50%;
 }
