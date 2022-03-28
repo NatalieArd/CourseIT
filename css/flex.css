@@ -8,6 +8,9 @@
 
 .main {
     display: flex;
+    background: url('img/football.png') repeat-y right top;
+    float: right;
+
 }
 
 .menu {
@@ -44,3 +47,39 @@ div {
     text-align: justify;
 }
 
+@media all and (max-width: 600px) {
+
+    .Hat {
+        display: none;
+    }
+
+    .Basement {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        background: none;
+    }
+
+    .cup {
+        width: 100%;
+    }
+
+    h4 {
+        margin: 0;
+    }
+
+    .menu {
+        display: inline-block;
+        background: none;
+    }
+
+    ul.hr {
+        padding: 0;
+    }
+
+    ul.hr li {
+        display: inline;
+    }
+}
