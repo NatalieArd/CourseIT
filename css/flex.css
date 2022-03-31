@@ -15,7 +15,7 @@
 
 .menu {
     flex-basis: 200px;
-    flex-grow: 0;
+    flex-shrink: 0;
     background: #f8e48c;
 }
 
