@@ -36,16 +36,17 @@ h3.title {
 .sidebar {
     grid-area: sd;
     background: #f8e48c;
+    padding-right:10px;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 250px, auto;
     grid-auto-rows: 50px, 1fr, 50px;
     grid-template-areas:
-        "hd hd hd hd   hd   hd   hd   hd   hd"
-        "sd sd sd sd main main main main main"
-        "ft ft ft ft   ft   ft   ft   ft   ft";
+        "hd hd"
+        "sd main"
+        "ft ft";
 }
 
 div {
