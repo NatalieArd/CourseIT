@@ -9,7 +9,7 @@
     animation: MyAnimation 1s infinite;
 }
 
-@-webkit-keyframes MyAnimation {
+@keyframes MyAnimation {
     from {
         background-color: rgb(255, 208, 0);
         color: rgb(255, 0, 170)
@@ -26,7 +26,7 @@
     }
 }
 
-@-webkit-keyframes MyAnimation2 {
+@keyframes MyAnimation2 {
     from {
         background-color: rgb(56, 204, 130);
         color: rgb(94, 55, 236)
@@ -43,25 +43,31 @@
     }
 }
 
-
-
-.main:hover .font{
+.main:hover .font {
     animation:
-    MyAnimation2 1s infinite
+        MyAnimation2 1s infinite
 }
 
-.circle {
-    -webkit-clip-path: ellipse(150px 100px at 50% 50%);;
+.lab {
+    clip-path: ellipse(180px 160px at 50% 50%);
 }
 
-.main:hover .circle {
-    -webkit-animation: 'Circle1' 1s infinite;
+.main:hover .lab {
+    animation: 'Circle1'3s infinite;
 }
 
-@-webkit-keyframes Circle1 {
-    0% { -webkit-clip-path: ellipse(150px 100px at 50% 50%); }
-    50% { -webkit-clip-path: ellipse(100px 130px at 50% 50%); }
-    100% { -webkit-clip-path: ellipse(150px 100px at 50% 50%); }
+@keyframes Circle1 {
+    0% {
+        -webkit-clip-path: ellipse(180px 160px at 50% 50%);
+    }
+
+    50% {
+        -webkit-clip-path: ellipse(130px 130px at 50% 50%);
+    }
+
+    100% {
+        -webkit-clip-path: ellipse(180px 160px at 50% 50%);
+    }
 }
 
 
@@ -76,20 +82,53 @@
 }
 
 .main:hover .box {
-    color: #3a7999;
-    box-shadow: inset 0 0 0 5px #3a7999;
+    animation: 'Border'2s infinite;
+
 }
 
-.press  {
-    background: #2db34a;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    font-size: 50px;
-    
-  }
+@keyframes Border {
+    0% {
+        color: #3a7999;
+        box-shadow: inset 0 0 0 5px #3a7999;
+    }
 
-  .main:hover .press {
-    background: #ff7b29;
-  }
-  
- 
+    100% {
+        color: #b5c8d1;
+        box-shadow: inset 0 0 0 5px #b5c8d1;
+    }
+}
+
+
+
+
+
+.press {
+    background: #2db34a;
+    width: 200px;
+    padding: 30px;
+}
+
+.main:hover .press {
+    animation: Move 2s infinite;
+}
+
+@keyframes Move {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(80px);
+        transform: translateX(80px);
+    }
+
+    80% {
+        transform: translateX(50px);
+        transform: translateX(50px);
+    }
+}
