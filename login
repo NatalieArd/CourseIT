@@ -139,48 +139,33 @@
 
 
 
+
 </head>
 <body>
-   
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Логин</b></label>
-      <input type="text" placeholder="Введите Логин" name="uname" required>
-
-      <label for="psw"><b>Пароль</b></label>
-      <input type="password" placeholder="Введите Пароль" name="psw" required>
-        
-      <button class="login" type="submit"><a href="successful.html">Зарегистрироваться</a></button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Запомнить
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
-      <span class="psw">Забыли <a href="#">пароль?</a></span>
-    </div>
-  </form>
+<div class="lable">
+  <input id="minus" class="button" type="button" value="-">
+  <label for="input"><input id="col" class="counter" type="text" name="number" maxlength="10"
+          placeholder="0"></label>
+  <input id="plus" class="button" type="button" value="+">
 </div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
+<!-- <label for="input">Число:</label> 
+<input name="input" type="number" id="col" value="1">
+<button id="buy">Купить</button>
+<button id="plus">+</button>
+<button id="minus">-</button> -->
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+<script>
+let col = document.getElementById('col');
+let plus = document.getElementById('plus');
+let minus = document.getElementById('minus');
+
+plus.onclick = function() {
+  col.value = parseInt(col.value) + 1;
+}
+
+minus.onclick = function() {
+  col.value = parseInt(col.value) - 1;
 }
 </script>
 </body>

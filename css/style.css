@@ -1,10 +1,13 @@
-
-.content {
-  min-height: calc(100vh - 150px); /* прижала подвал вниз страницы */
-}
-
 html {
   overflow-x: hidden;
+}
+
+#wrapper {
+  max-width: 1170px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Head {
@@ -155,7 +158,11 @@ button {
 .content {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  min-height: calc(100vh - 350px); 
+
 }
+
+  
 
 h1 {
   font-size: 40px;
@@ -198,7 +205,7 @@ h1 {
 .action_list {
   display: flex;
   justify-content: space-around;
-  align-content: stretch;
+  /* align-content: stretch; */
   align-items:center;
 }
 
@@ -206,14 +213,14 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 2;
+  /* flex-grow: 2; */
 }
 
 .long_hand {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .long_hand:hover {
@@ -355,7 +362,7 @@ span {
 .navigation {
   padding: 20px 0 20px 35px;
   text-align: left;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .navigation a {
@@ -398,7 +405,7 @@ span {
 
 .table {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 16px;
   text-transform: uppercase;
   font-weight: bold;
@@ -421,7 +428,7 @@ span {
 
 .table_catalog {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2px;
   align-content:center;
 }
@@ -430,6 +437,10 @@ span {
   border: solid 1px #dfdede;
   display: grid;
   grid-template-rows: 220px 1fr auto;
+}
+
+.item:hover {
+  box-shadow: 0 4px 9px 0 #CECECE;
 }
 
 .menu_bar {
@@ -441,6 +452,27 @@ span {
 }
 
 .button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+.button:hover {
+  background-position: right center;
+}
+
+
+
+/* .button {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   background-color: black;
@@ -452,10 +484,30 @@ span {
 
 .button:hover {
     background-color: white;
-    border: black 1px solid;
+    border: black 0.5px solid;
     color: black;
+} */
+
+.button_count {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  /* font-weight: bold; */
+  padding: 5px 25px;
+  margin: 10px 20px;
+  /* border-radius: 10px; */
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  /* background-image: linear-gradient(to right, #fefefe 0%, #a39f9f 51%, #fefefe 100%);
+  background-size: 80% auto;
+  box-shadow: 0 0 20px rgba(129, 129, 129, 0.1);
+  transition: .5s; */
 }
 
+/* .button_count:hover {
+  background-position: right center;
+}
+ */
 .counter {
   max-width: 15px;
   height: 20px;
@@ -465,7 +517,7 @@ span {
 
 .table_catalog_main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
@@ -599,3 +651,6 @@ span.psw {
   to {transform: scale(1)}
 }
 
+/* .congrats {
+  margin-top: 100px;
+} */

@@ -19,6 +19,7 @@
 
 <body>
 
+    <div id="wrapper">
     <div class="Head">
         <div class="logo">
             <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
@@ -100,14 +101,14 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button"  onclick="decr('bcart1')" value="-">
+                        <label for="input"><input id="bcart1" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('bcart1')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
+                        <input id="heart1" onclick="wishClick('heart1')" type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
                     </div>
                 </div>
             </div>
@@ -126,10 +127,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('bcart2')" value="-">
+                        <label for="input"><input id="bcart2" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('bcart2')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -151,10 +152,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('bcart3')" value="-">
+                        <label for="input"><input id="bcart3" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('bcart3')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -176,10 +177,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('bcart4')" value="-">
+                        <label for="input"><input id="bcart4" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('bcart4')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -200,10 +201,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('cart1')" value="-">
+                        <label for="input"><input id="cart1" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('cart1')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -225,10 +226,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('cart2')" value="-">
+                        <label for="input"><input id="cart2" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('cart2')"value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -250,10 +251,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('cart3')" value="-">
+                        <label for="input"><input id="cart3" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('cart3')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -277,10 +278,10 @@
                         <form action="Buy.php" method="get"></form>
                     </div>
                     <div class="lable">
-                        <input class="button" type="button" value="-">
-                        <label for=""><input class="counter" type="text" name="number" maxlength="10"
+                        <input class="button_count" type="button" onclick="decr('cart4')" value="-">
+                        <label for="input"><input id="cart4" class="counter" type="text" name="number" maxlength="10"
                                 placeholder="0"></label>
-                        <input class="button" type="button" value="+">
+                        <input class="button_count" type="button" onclick="incr('cart4')" value="+">
                     </div>
                     <div class="menu_bar">
                         <input class="button" type="button" value="В корзину">
@@ -347,6 +348,7 @@
                 <li>Сайт разработан: Natallie Ardyako</li>
             </ul>
         </div>
+    </div>
     </div>
 </body>
 

@@ -72,3 +72,24 @@ window.onclick = function (event) {
 		modal.style.display = "none";
 	}
 }
+
+
+function incr(id) {
+	var el = document.getElementById(id);
+	var numb = el.value;
+	numb++;
+	el.value = numb;
+}
+
+function decr(id) {
+	var el = document.getElementById(id);
+	var numb = el.value;
+	numb--;
+	el.value = numb;
+
+}
+
+function wishClick(id) {
+	var el = document.getElementById(id);
+	el.style.background = !el.style.background ? 'url("../img/icons/heart_active.svg") no-repeat' : '';
+}
