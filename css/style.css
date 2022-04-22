@@ -306,7 +306,6 @@ a.social:hover {
 
 .footer-menu a {
   color: black;
-  text-decoration: underline;
 }
 
 .Footer {
@@ -453,4 +452,13 @@ span {
   /* position: absolute;
   bottom: 0px; */
   width: 100%;
+}
+
+.address {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.title_shop{
+  text-decoration: none !important; 
 }
