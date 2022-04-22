@@ -19,13 +19,13 @@
         text-align: center;
     }
 
-    .main_icons {
+   /*  .main_icons {
         width: 100%;
-        /* justify-content: center; */
-        letter-spacing: 20px;
-        /* align-items: center; */
-        text-align: center;
-    }
+        justify-content: center; 
+        letter-spacing: 20px; 
+        align-items: center; 
+        text-align: center; 
+    } */
 
     .pre-Footer {
         flex-direction: column;
@@ -57,4 +57,21 @@
     .logo_actions {
         order: 1;
     }
+
+    span.psw {
+        display: block;
+        float: none;
+     }
+     .cancelbtn {
+        width: 100%;
+     }
+   
+     .modal-content {
+         letter-spacing: none !important;
+         text-align: start;
+     }
 }
+
+
+  
+  

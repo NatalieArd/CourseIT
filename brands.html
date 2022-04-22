@@ -20,7 +20,8 @@
 
     <div class="Head">
         <div class="logo">
-            <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails" title="Ditanails"></a>
+            <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
+                    title="Ditanails"></a>
         </div>
         <div class="menu-main">
             <ul>
@@ -37,13 +38,12 @@
                 <div id="myDropdown" class="dropdown-content">
                     <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
                 </div>
-                <script src="js/script.js"></script>
+                <!-- <script src="js/script.js"></script> -->
             </div>
             <a href="" target="_blank"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></a>
             <a href="" target="_blank">
-                <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное"
-                    title="Избранное">
-                </a>
+                <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
+            </a>
             <a href="" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
         </div>
     </div>
@@ -56,163 +56,166 @@
             <a href="index.html">Главная/</a><a href="brands.html">Бренды</a>
         </div>
 
-<div class="search_brand">
-    <form method="get" action="FindBrand.php">
-        <p><input class="search_input" type="search" name="q" placeholder="Найти бренд"></p>
-       </form>
-</div>
-        
+        <div class="search_brand">
+            <form id="search-highlight" method="post" action="#">
+                <p><input class="search_input" type="text" name="term" id="text-to-find" placeholder="Бренд">
+                    <input class="search_button" type="submit" name="submit"
+                        onclick="FindOnPage(); return false;" value="Найти" />
+                </p>
+            </form>
 
-        <div class="table">
-            <div class="cards">
-                <ul>
-                    <li>0-9</li><br>
-                    <li><a href="">3 lab</a></li>
-                    <li><a href="">50 Megumi</a></li>
-                </ul>
+            <script src="js/script.js"></script>
+        </div>
+        <p class="results"></p>
+
+        <div id="brands">
+            <div class="table">
+                <div class="cards">
+                    <ul>
+                        <li>0-9</li><br>
+                        <li><a href="">3 lab</a></li>
+                        <li><a href="">50 Megumi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="table">
+                <div class="cards">
+                    <ul>
+                        <li>A</li><br>
+                        <li><a href="">Adele</a></li>
+                        <li><a href="">Archdale</a></li>
+                        <li><a href="">Arnelle</a></li>
+                        <li><a href="">Artex</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>B</li><br>
+                        <li><a href="">Bagheera Nails</a></li>
+                        <li><a href="">Be Natural</a></li>
+                        <li><a href="">Beautix</a></li>
+                        <li><a href="">Bloom</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>C</li><br>
+                        <li><a href="">Codyson</a></li>
+                        <li><a href="">Cosmoprofi</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>D</li><br>
+                        <li><a href="">DispoLand</a></li>
+                        <li><a href="">DIVA</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>E</li><br>
+                        <li><a href="">Emil</a></li>
+                        <li><a href="">ENVY</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>F</li><br>
+                        <li><a href="">Fantasy Nails</a></li>
+                        <li><a href="">Farmona</a></li>
+                        <li><a href="">First Gel</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>G</li><br>
+                        <li><a href="">Gellaktik</a></li>
+                        <li><a href="">Global Fashion</a></li>
+                        <li><a href="">Grattol</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>I</li><br>
+                        <li><a href="">IBDI Nails</a></li>
+                        <li><a href="">IBX System</a></li>
+                        <li><a href="">Imen</a></li>
+                        <li><a href="">Ingarden</a></li>
+                        <li><a href="">IRISK</a></li>
+                        <li><a href="">IVA Nails</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>J</li><br>
+                        <li><a href="">Jas</a></li>
+                        <li><a href="">Ju.Bilej</a></li>
+                        <li><a href="">Judi Nails</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>K</li><br>
+                        <li><a href="">Kinetics</a></li>
+                        <li><a href="">KLIO</a></li>
+                        <li><a href="">Kodi</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>L</li><br>
+                        <li><a href="">LAQUE</a></li>
+                        <li><a href="">Lesly</a></li>
+                        <li><a href="">Lianail</a></li>
+                        <li><a href="">LiNTO</a></li>
+                        <li><a href="">Lisanail</a></li>
+                        <li><a href="">Lovely</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>M</li><br>
+                        <li><a href="">Marathon</a></li>
+                        <li><a href="">Memoire</a></li>
+                        <li><a href="">Metaleks</a></li>
+                        <li><a href="">MiLK</a></li>
+                        <li><a href="">MIO Nails</a></li>
+                        <li><a href="">Mirage</a></li>
+                        <li><a href="">Miranda</a></li>
+                        <li><a href="">Monami</a></li>
+                        <li><a href="">My Love</a></li>
+                        <li><a href="">Mystique</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>N</li><br>
+                        <li><a href="">Nail Best</a></li>
+                        <li><a href="">Nail Passion</a></li>
+                        <li><a href="">Nartist</a></li>
+                        <li><a href="">NeoNail</a></li>
+                        <li><a href="">NitriMax</a></li>
+                        <li><a href="">No name</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>O</li><br>
+                        <li><a href="">OneAir</a></li>
+                        <li><a href="">OneNail</a></li>
+                        <li><a href="">ONIQ</a></li>
+                        <li><a href="">Option</a></li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <ul>
+                        <li>P</li><br>
+                        <li><a href="">Pole</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="table">
-            <div class="cards">
-                <ul>
-                    <li>A</li><br>
-                    <li><a href="">Adele</a></li>
-                    <li><a href="">Archdale</a></li>
-                    <li><a href="">Arnelle</a></li>
-                    <li><a href="">Artex</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>B</li><br>
-                <li><a href="">Bagheera Nails</a></li>
-                <li><a href="">Be Natural</a></li>
-                <li><a href="">Beautix</a></li>
-                <li><a href="">Bloom</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>C</li><br>
-                <li><a href="">Codyson</a></li>
-            <li><a href="">Cosmoprofi</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>D</li><br>
-                <li><a href="">DispoLand</a></li>
-                <li><a href="">DIVA</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>E</li><br>
-                <li><a href="">Emil</a></li>
-                <li><a href="">ENVY</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                    <li>F</li><br>
-                    <li><a href="">Fantasy Nails</a></li>
-            <li><a href="">Farmona</a></li>
-            <li><a href="">First Gel</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>G</li><br>
-                <li><a href="">Gellaktik</a></li>
-            <li><a href="">Global Fashion</a></li>
-            <li><a href="">Grattol</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>I</li><br>
-                <li><a href="">IBDI Nails</a></li>
-            <li><a href="">IBX System</a></li>
-            <li><a href="">Imen</a></li>
-            <li><a href="">Ingarden</a></li>
-            <li><a href="">IRISK</a></li>
-            <li><a href="">IVA Nails</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>J</li><br>
-                <li><a href="">Jas</a></li>
-                <li><a href="">Ju.Bilej</a></li>
-                <li><a href="">Judi Nails</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>K</li><br>
-                <li><a href="">Kinetics</a></li>
-                <li><a href="">KLIO</a></li>
-                <li><a href="">Kodi</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>L</li><br>
-                <li><a href="">LAQUE</a></li>
-                <li><a href="">Lesly</a></li>
-                <li><a href="">Lianail</a></li>
-                <li><a href="">LiNTO</a></li>
-                <li><a href="">Lisanail</a></li>
-                <li><a href="">Lovely</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>M</li><br>
-                <li><a href="">Marathon</a></li>
-                <li><a href="">Memoire</a></li>
-                <li><a href="">Metaleks</a></li>
-                <li><a href="">MiLK</a></li>
-                <li><a href="">MIO Nails</a></li>
-                <li><a href="">Mirage</a></li>
-                <li><a href="">Miranda</a></li>
-                <li><a href="">Monami</a></li>
-                <li><a href="">My Love</a></li>
-                <li><a href="">Mystique</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>N</li><br>
-                <li><a href="">Nail Best</a></li>
-                <li><a href="">Nail Passion</a></li>
-                <li><a href="">Nartist</a></li>
-                <li><a href="">NeoNail</a></li>
-                <li><a href="">NitriMax</a></li>
-                <li><a href="">No name</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>O</li><br>
-                <li><a href="">OneAir</a></li>
-                <li><a href="">OneNail</a></li>
-                <li><a href="">ONIQ</a></li>
-                <li><a href="">Option</a></li>
-                </ul>
-            </div>
-            <div class="cards">
-                <ul>
-                <li>P</li><br>
-                <li><a href="">Pole</a></li>
-                </ul>
-            </div>
-        </div>
-
-
-
-
     </div>
 
     <img class="line" src="img/line.png" alt="">
@@ -243,17 +246,6 @@
                 <li><a href="">Возврат</a></li>
             </ul>
         </div>
-
-
-        <!--
-
-        </div>
-          <div class="social-icons-wrapper">
-            <a class="social-icon" target="_blank" href=""><i class="fa fa-facebook"></i></a>
-            <a class="social-icon" target="_blank" href=""><i class="fa fa-twitter"></i></a>
-            <a class="social-icon" target="_blank" href=""><i class="fa fa-google-plus"></i></a>
-            </div>
-    </div> -->
     </div>
     <div class="Footer">
         <div class="footer-info">
@@ -261,7 +253,7 @@
         </div>
         <div class="footer-info">
             <a href=""><img src="img/Instagram.svg" alt=""></a>
-                <a href=""><img src="img/VK Logo.svg" alt=""></a>
+            <a href=""><img src="img/VK Logo.svg" alt=""></a>
         </div>
         <div class="footer-info">
             <ul>

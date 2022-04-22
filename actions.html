@@ -20,7 +20,8 @@
 
     <div class="Head">
         <div class="logo">
-            <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails" title="Ditanails"></a>
+            <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
+                    title="Ditanails"></a>
         </div>
         <div class="menu-main">
             <ul>
@@ -39,17 +40,43 @@
                 </div>
                 <script src="js/script.js"></script>
             </div>
-            <a href="" target="_blank"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
+
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Логин</b></label>
+                  <input class="form_reg" type="text" placeholder="Введите Логин" name="uname" required>
+            
+                  <label for="psw"><b>Пароль</b></label>
+                  <input class="form_reg" type="password" placeholder="Введите Пароль" name="psw" required>
+                    
+                  <button class="login" type="submit"><a href="successful.html">Зарегистрироваться</a></button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Запомнить
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
+                  <span class="psw">Забыли <a href="#">пароль?</a></span>
+                </div>
+              </form>
+            </div>
             <a href="" target="_blank">
-                <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное"
-                    title="Избранное">
-                </a>
+                <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
+            </a>
             <a href="" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
         </div>
     </div>
-    <div>
+  
         <img class="line" src="img/line.png" alt="">
-    </div>
+  
 
     <div class="content">
 
