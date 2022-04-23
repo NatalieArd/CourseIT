@@ -77,6 +77,7 @@ window.onclick = function (event) {
 function incr(id) {
 	var el = document.getElementById(id);
 	var numb = el.value;
+if (numb<99)
 	numb++;
 	el.value = numb;
 }
@@ -84,6 +85,7 @@ function incr(id) {
 function decr(id) {
 	var el = document.getElementById(id);
 	var numb = el.value;
+if (numb>0)
 	numb--;
 	el.value = numb;
 

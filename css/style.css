@@ -345,6 +345,39 @@ a.social:hover {
   color: #dfdede
 }
 
+.social-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: inline-block;
+  /* height: 40px;
+  width: 40px; */
+  /* border-radius: 50%; */
+ /*  margin: 20px 50px 0;
+   color: #606066; */
+   /* background-color: rgba(20, 20, 20, 0);
+   transform: scale(1);
+   transition: .3s linear; */
+}
+
+i{
+  padding: 0px 10px 0px 10px;
+  color: #dfdede;
+}
+
+.fa {
+  font-size: 30px;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  /* background: #606060 */
+  color: #fff;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100;300;700&family=Pacifico&display=swap');
 
 span {
@@ -457,7 +490,7 @@ span {
   color: white;
   padding: 10px 20px;
   margin: 10px 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -491,24 +524,26 @@ span {
 .button_count {
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
-  /* font-weight: bold; */
-  padding: 5px 25px;
-  margin: 10px 20px;
-  /* border-radius: 10px; */
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 2px 10px;
+  margin: 5px 10px;
+  /* border-radius: 10px;  */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  /* background-image: linear-gradient(to right, #fefefe 0%, #a39f9f 51%, #fefefe 100%);
-  background-size: 80% auto;
-  box-shadow: 0 0 20px rgba(129, 129, 129, 0.1);
-  transition: .5s; */
+  background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
+  background-size: 60% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
 }
 
-/* .button_count:hover {
+.button_count:hover {
   background-position: right center;
 }
- */
+
 .counter {
+  pointer-events: none;
   max-width: 15px;
   height: 20px;
   text-align: center;
