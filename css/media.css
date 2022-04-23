@@ -19,7 +19,7 @@
         text-align: center;
     }
 
-   /*  .main_icons {
+    /*  .main_icons {
         width: 100%;
         justify-content: center; 
         letter-spacing: 20px; 
@@ -61,17 +61,14 @@
     span.psw {
         display: block;
         float: none;
-     }
-     .cancelbtn {
+    }
+
+    .cancelbtn {
         width: 100%;
-     }
-   
-     .modal-content {
-         letter-spacing: none !important;
-         text-align: start;
-     }
+    }
+
+    .modal-content {
+        letter-spacing: none !important;
+        text-align: start;
+    }
 }
-
-
-  
-  

@@ -13,7 +13,6 @@ html {
 .Head {
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  /* пописать альтернативные шрифты */
   justify-content: space-around;
 
 }
@@ -60,7 +59,6 @@ html {
   color: black
 }
 
-/* .menu-main a.current, .menu-main a:hover{color: black;} */
 .menu-main a:before,
 .menu-main a:after {
   content: "";
@@ -152,17 +150,15 @@ button {
 
 .line {
   width: 100%;
-  align-items:center;
+  align-items: center;
 }
 
 .content {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  min-height: calc(100vh - 350px); 
+  min-height: calc(100vh - 350px);
 
 }
-
-  
 
 h1 {
   font-size: 40px;
@@ -177,12 +173,8 @@ h1 {
 .main_pic {
   margin-top: 20px;
   width: 100%;
-  /* Ширина изображений */
   height: 100%;
-  /* Высота изображении */
   object-fit: cover;
-  /* Вписываем фотографию в область */
-
 }
 
 .title {
@@ -190,6 +182,7 @@ h1 {
   padding-bottom: 30px;
   text-align: left;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .action_title {
@@ -205,33 +198,34 @@ h1 {
 .action_list {
   display: flex;
   justify-content: space-around;
-  /* align-content: stretch; */
-  align-items:center;
+  align-items: center;
 }
 
 .outline {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-grow: 2; */
 }
 
 .long_hand {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-grow: 1; */
+  background: none;
 }
 
 .long_hand:hover {
   background: #dfdede;
 }
 
+.price {
+  min-width: 95px;
+}
+
 span.action_price {
   color: #dfdede;
   text-decoration: line-through;
 }
-
 
 .pic_cent {
   margin-top: 25px;
@@ -241,11 +235,11 @@ span.action_price {
   margin-top: 30px;
 }
 
-
-
 .follow_us {
   margin-top: 70px;
+  padding-bottom: 70px;
   background: black;
+
 }
 
 .action_title_w {
@@ -295,7 +289,22 @@ a.social:hover {
 
 .pic {
   position: relative;
-  width: 70%;
+  overflow: hidden;
+  width: 305px;
+  height: 305px;
+
+}
+
+.pic {
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+
+.pic:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .pre-Footer {
@@ -326,22 +335,22 @@ a.social:hover {
   display: flex;
   justify-content: space-around;
   font-size: 10px;
-  background-color:black;
+  background-color: black;
   color: #dfdede;
   font-family: 'Montserrat', sans-serif;
-  align-items:center;
+  align-items: center;
 }
 
-.footer-info ul{
+.footer-info ul {
   display: inline-block;
   padding-inline-start: 0;
 }
 
-.footer-info li{
+.footer-info li {
   list-style: none;
 }
 
-.footer-info a{
+.footer-info a {
   color: #dfdede
 }
 
@@ -356,14 +365,14 @@ a.social:hover {
   /* height: 40px;
   width: 40px; */
   /* border-radius: 50%; */
- /*  margin: 20px 50px 0;
+  /*  margin: 20px 50px 0;
    color: #606066; */
-   /* background-color: rgba(20, 20, 20, 0);
+  /* background-color: rgba(20, 20, 20, 0);
    transform: scale(1);
    transition: .3s linear; */
 }
 
-i{
+i {
   padding: 0px 10px 0px 10px;
   color: #dfdede;
 }
@@ -374,18 +383,14 @@ i{
 
 .social-icon:hover {
   transform: scale(1.2);
-  /* background: #606060 */
   color: #fff;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100;300;700&family=Pacifico&display=swap');
 
 span {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
 }
-
 
 .newCards {
   display: grid;
@@ -415,7 +420,7 @@ span {
 
 .search_button {
   font-size: 15px;
-  background-color:#606060;
+  background-color: #606060;
   color: #dfdede;
   border: none;
   font-family: 'Montserrat', sans-serif;
@@ -427,8 +432,6 @@ span {
   border-bottom: 1px solid #dfdede;
   outline: 0;
   width: 500px;
-  /* КАК УМЕНЬШАТЬ  */
-  /* object-fit: cover; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -463,7 +466,7 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2px;
-  align-content:center;
+  align-content: center;
 }
 
 .item {
@@ -481,7 +484,7 @@ span {
   align-items: center;
   grid-template-columns: 12fr 1fr;
   margin-top: 10px;
-  margin: 0;
+  padding-right: 10px;
 }
 
 .button {
@@ -490,7 +493,6 @@ span {
   color: white;
   padding: 10px 20px;
   margin: 10px 20px;
-  /* border-radius: 10px; */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -499,27 +501,10 @@ span {
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
   transition: .5s;
 }
+
 .button:hover {
   background-position: right center;
 }
-
-
-
-/* .button {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  background-color: black;
-  color: #dfdede;
-  text-decoration: none;
-  font-size: 15px;
-  margin: 0;
-}
-
-.button:hover {
-    background-color: white;
-    border: black 0.5px solid;
-    color: black;
-} */
 
 .button_count {
   text-decoration: none;
@@ -529,7 +514,6 @@ span {
   font-weight: bold;
   padding: 2px 10px;
   margin: 5px 10px;
-  /* border-radius: 10px;  */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
@@ -557,8 +541,6 @@ span {
 }
 
 .shop_bar {
-  /* position: absolute;
-  bottom: 0px; */
   width: 100%;
 }
 
@@ -567,10 +549,9 @@ span {
   font-weight: bold;
 }
 
-.title_shop{
-  text-decoration: none !important; 
+.title_shop {
+  text-decoration: none !important;
 }
-
 
 .form_reg {
   width: 100%;
@@ -581,7 +562,6 @@ span {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
 button {
   background-color: white;
   border: none;
@@ -590,27 +570,25 @@ button {
 }
 
 .login {
-background-color: #606060;
-font-size: 15px;
+  background-color: #606060;
+  font-size: 15px;
   border: none;
   cursor: pointer;
   width: 100%;
- 
+
 }
 
-.login a{
+.login a {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
 }
 
-
 button:hover {
   opacity: 0.8;
 }
 
-/* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
@@ -621,7 +599,7 @@ button:hover {
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
-} 
+}
 
 .container {
   padding: 16px;
@@ -633,28 +611,26 @@ span.psw {
 }
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   padding-top: 60px;
 }
 
-
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; 
+  margin: 5% auto 15% auto;
   border: 1px solid #888;
-  max-width: 40%; 
-  
-}
+  max-width: 40%;
 
+}
 
 .close {
   position: absolute;
@@ -677,15 +653,21 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
-/* .congrats {
-  margin-top: 100px;
-} */
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}

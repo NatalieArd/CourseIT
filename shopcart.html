@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +13,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <title>DITANAIL</title>
 </head>
 
@@ -28,9 +30,9 @@
                 <ul>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="brands.html">Бренды</a></li>
-                    <li><a href="shops.html">Палитра</a></li>
+                    <li><a href="index.html">Палитра</a></li>
                     <li><a href="shops.html">Магазины</a></li>
-                    <li><a href="shops.html">Акции</a></li>
+                    <li><a href="index.html">Акции</a></li>
                 </ul>
             </div>
             <div class="main_icons">
@@ -87,26 +89,50 @@
         <div class="content">
 
             <div class="navigation">
-                <a href="index.html">Главная &mdash;</a><a href="shops.html"> Магазины</a>
+                <a href="index.html">Главная &mdash;</a><a href="actions.html"> Корзина</a>
             </div>
-            <img class="line" src="img/line.png" alt="изображение горизонтальной линии">
-            <div class="address">
-                <p>г. Пенза, Урицкого/Славы 74/9</p>
-                <p>тел: 8(967)441&ndash;00&ndash;23</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2390.243460864777!2d45.02261851556755!3d53.195549793697126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414100f0c535d8a3%3A0xa56dfc468e30a909!2z0YPQuy4g0KPRgNC40YbQutC-0LPQviwgNzQsINCf0LXQvdC30LAsINCf0LXQvdC30LXQvdGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgNDQwMDAw!5e0!3m2!1sru!2sby!4v1650614470057!5m2!1sru!2sby"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div><br>
-            <img class="line" src="img/line.png" alt="изображение горизонтальной линии">
-            <div class="address">
-                <p>г. Пенза, 1&ndash;й пр. Онежского, 4 (ТЦ Онежский, 2 этаж)</p>
-                <p>тел: 8(967)442&ndash;85&ndash;35</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.9454800797166!2d44.9406447155684!3d53.21882589195675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414101843cc295ff%3A0x8da373d66e09714a!2z0J7QvdC10LbRgdC60LjQuQ!5e0!3m2!1sru!2sby!4v1650614792097!5m2!1sru!2sby"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+            <div class="shopping_cart">
+                <div class="shop_list">
+                    <div class="shop_item"><img src="img/new/cart1.jpg" alt=""></div>
+                    <div>Linto beauty, GEL POLISH, №135</div>
+                    <div class="lable2">
+                        <input class="button_count2" type="button" onclick="decr('cart1')" value="-">
+                        <label for="input"><input id="cart3" class="counter2" type="text" name="number" maxlength="2"
+                                placeholder="0"></label>
+                        <input class="button_count2" type="button" onclick="incr('cart1')" value="+">
+                    </div>
+                    <div class="price">520 &#8381;</div>
+                    <div><button><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="shop_list">
+                    <div class="shop_item"><img src="img/bestseller/bcart2..jpg" alt=""></div>
+                    <div>Linto beauty, BASE RUBBER (15)</div>
+                    <div class="lable2">
+                        <input class="button_count2" type="button" onclick="decr('cart2')" value="-">
+                        <label for="input"><input id="cart3" class="counter2" type="text" name="number" maxlength="2"
+                                placeholder="0"></label>
+                        <input class="button_count2" type="button" onclick="incr('cart2')" value="+">
+                    </div>
+                    <div class="price">700 &#8381;</span> <span class="action_price">850 &#8381;</div>
+                    <div><button><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+                </div>
+                <div class="shop_list">
+                    <div class="shop_item"><img src="img/new/cart4.jpg" alt=""></div>
+                    <div>Linto beauty, GEL POLISH, №44</div>
+                    <div class="lable2">
+                        <input class="button_count2" type="button" onclick="decr('cart3')" value="-">
+                        <label for="input"><input id="cart3" class="counter2" type="text" name="number" maxlength="2"
+                                placeholder="0"></label>
+                        <input class="button_count2" type="button" onclick="incr('cart3')" value="+">
+                    </div>
+                    <div class="price">520 &#8381;</div>
+                    <div><button><i class="fa fa-trash" aria-hidden="true"></i></button></div>
+                </div>
+                <div>
+                    <input class="win" type="button" value="Купить">
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -138,20 +164,15 @@
                     <li><a href="">Возврат</a></li>
                 </ul>
             </div>
+
         </div>
         <div class="Footer">
             <div class="footer-info">
                 <a href="">Политика конфиденциальности</a>
             </div>
-            <div class="social-icons-wrapper">
-                <a class="social-icon" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"
-                        aria-hidden="true"></i></a>
-                <a class="social-icon" target="_blank" href="https://twitter.com"><i class="fa fa-twitter"
-                        aria-hidden="true"></i></a>
-                <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a>
-                <a class="social-icon" target="_blank" href="https://vk.com"><i class="fa fa-vk"
-                        aria-hidden="true"></i></a>
+            <div class="footer-info">
+                <a href=""><img src="img/Instagram.svg" alt=""></a>
+                <a href=""><img src="img/VK Logo.svg" alt=""></a>
             </div>
             <div class="footer-info">
                 <ul>
@@ -160,6 +181,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
 
 </body>

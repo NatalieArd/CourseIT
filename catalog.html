@@ -20,326 +20,343 @@
 <body>
 
     <div id="wrapper">
-    <div class="Head">
-        <div class="logo">
-            <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
-                    title="Ditanails"></a>
-        </div>
-        <div class="menu-main">
-            <ul>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="brands.html">Бренды</a></li>
-                <li><a href="catalog.html">Палитра</a></li>
-                <li><a href="shops.html">Магазины</a></li>
-                <li><a href="catalog.html">Акции</a></li>
-            </ul>
-        </div>
-        <div class="main_icons">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><img src="img/icons/search.svg" alt=""></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
-                </div>
-                <script src="js/script.js"></script>
+        <div class="Head">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
+                        title="Ditanails"></a>
             </div>
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
+            <div class="menu-main">
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="brands.html">Бренды</a></li>
+                    <li><a href="catalog.html">Палитра</a></li>
+                    <li><a href="shops.html">Магазины</a></li>
+                    <li><a href="catalog.html">Акции</a></li>
+                </ul>
+            </div>
+            <div class="main_icons">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="img/icons/search.svg" alt=""></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
+                    </div>
+                    <script src="js/script.js"></script>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img
+                        src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
 
-            <div id="id01" class="modal">
-              
-              <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Логин</b></label>
+                            <input class="form_reg" type="text" placeholder="Введите Логин" name="uname" required>
+
+                            <label for="psw"><b>Пароль</b></label>
+                            <input class="form_reg" type="password" placeholder="Введите Пароль" name="psw" required>
+
+                            <button class="login" type="submit"><a
+                                    href="successful.html">Зарегистрироваться</a></button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Запомнить
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отмена</button>
+                            <span class="psw">Забыли <a href="#">пароль?</a></span>
+                        </div>
+                    </form>
                 </div>
-            
-                <div class="container">
-                  <label for="uname"><b>Логин</b></label>
-                  <input class="form_reg" type="text" placeholder="Введите Логин" name="uname" required>
-            
-                  <label for="psw"><b>Пароль</b></label>
-                  <input class="form_reg" type="password" placeholder="Введите Пароль" name="psw" required>
-                    
-                  <button class="login" type="submit"><a href="successful.html">Зарегистрироваться</a></button>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Запомнить
-                  </label>
-                </div>
-            
-                <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
-                  <span class="psw">Забыли <a href="#">пароль?</a></span>
-                </div>
-              </form>
+                <a href="" target="_blank">
+                    <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
+                </a>
+                <a href="shopcart.html" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина"
+                        title="Корзина"></a>
             </div>
-            <a href="" target="_blank">
-                <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
-            </a>
-            <a href="" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
         </div>
-    </div>
-   
+
         <img class="line" src="img/line.png" alt="">
-   
 
-    <div class="content">
-        <div class="navigation">
-            <a href="index.html">Главная/</a><a href="catalog.html">Каталог</a>
-        </div>
 
-        <section class="table_catalog_main">
-
-            <div class="item">
-                <div>
-                    <img src="img/bestseller/bcart1.jpg" alt="изображение гель-лака в цвете №135" class="pic_cent2">
-                </div>
-                <div class="text">
-                    <h5>TM Grape professional, franch base №7 </h5>
-                </div>
-                <div class="shop_bar">
-                    <span>1000 &#8381;</span>
-                    <div class="shop_bar"></div>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button"  onclick="decr('bcart1')" value="-">
-                        <label for="input"><input id="bcart1" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('bcart1')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input id="heart1" onclick="wishClick('heart1')" type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
-                    </div>
-                </div>
+        <div class="content">
+            <div class="navigation">
+                <a href="index.html">Главная &mdash;</a><a href="catalog.html"> Каталог</a>
             </div>
 
-            <div class="item">
-                <div>
-                    <img src="img/bestseller/bcart2..jpg" alt="изображение гель-лака в цвете №095" class="bs2">
-                </div>
-                <div class="text">
-                    <h5>Linto beauty, BASE RUBBER (15)</h5>
+            <section class="table_catalog_main">
 
-                </div>
-                <div class="shop_bar">
-                    <span>700 &#8381;</span> <span class="action_price">850 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
+                <div class="item">
+                    <div>
+                        <img src="img/bestseller/bcart1.jpg" alt="изображение гель-лака в цвете №135" class="pic_cent2">
                     </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('bcart2')" value="-">
-                        <label for="input"><input id="bcart2" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('bcart2')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
-                    </div>  
-                </div>
-            </div>
-
-            <div class="item">
-                <div>
-                    <img src="img/bestseller/bcart3.jpg" alt="изображение гель-лака тренд 2021/2022" class="bs3">
-                </div>
-                <div class="text">
-                    <h5>Grape professional, Extra base</h5>
-                </div>
-                    <div class="shop_bar">
-                    <span>1 800 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('bcart3')" value="-">
-                        <label for="input"><input id="bcart3" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('bcart3')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div>
-                    <img src="img/bestseller/bcart4.jpg" alt="изображение гель-лака в цвете №44" class="bs4">
-                </div>
-                <div class="text">
-                    <h5>Beautix, UniGel System №1003</h5>
+                    <div class="text">
+                        <h5>TM Grape professional, franch base №7 </h5>
                     </div>
                     <div class="shop_bar">
-                    <span>1200 &#8381;</span> <span class="action_price">1500 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('bcart4')" value="-">
-                        <label for="input"><input id="bcart4" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('bcart4')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
+                        <span>1000 &#8381;</span>
+                        <div class="shop_bar"></div>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('bcart1')" value="-">
+                            <label for="input"><input id="bcart1" class="counter" type="text" name="number"
+                                    maxlength="2" placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('bcart1')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart1" onclick="wishClick('heart1')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div>
-                    <img src="img/new/cart1.jpg" alt="изображение гель-лака в цвете №135">
-                </div>
-                <div class="text">
-                    <h5>Linto beauty, GEL POLISH, №135</h5>
+
+                <div class="item">
+                    <div>
+                        <img src="img/bestseller/bcart2..jpg" alt="изображение гель-лака в цвете №095" class="bs2">
+                    </div>
+                    <div class="text">
+                        <h5>Linto beauty, BASE RUBBER (15)</h5>
+
                     </div>
                     <div class="shop_bar">
-                    <span>520 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('cart1')" value="-">
-                        <label for="input"><input id="cart1" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('cart1')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
+                        <span>700 &#8381;</span> <span class="action_price">850 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('bcart2')" value="-">
+                            <label for="input"><input id="bcart2" class="counter" type="text" name="number"
+                                    maxlength="2" placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('bcart2')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart2" onclick="wishClick('heart2')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <div>
-                    <img src="img/new/cart2.jpg" alt="изображение гель-лака в цвете №095">
-                </div>
-                <div class="text">
-                    <h5>Linto beauty, GEL POLISH, №095</h5>
+                <div class="item">
+                    <div>
+                        <img src="img/bestseller/bcart3.jpg" alt="изображение гель-лака тренд 2021/2022" class="bs3">
+                    </div>
+                    <div class="text">
+                        <h5>Grape professional, Extra base</h5>
                     </div>
                     <div class="shop_bar">
-                    <span>520 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('cart2')" value="-">
-                        <label for="input"><input id="cart2" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('cart2')"value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
+                        <span>1 800 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('bcart3')" value="-">
+                            <label for="input"><input id="bcart3" class="counter" type="text" name="number"
+                                    maxlength="2" placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('bcart3')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart3" onclick="wishClick('heart3')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="item">
-                <div>
-                    <img src="img/new/cart3.jpg" alt="изображение гель-лака тренд 2021/2022" class="pic_cent">
-                </div>
-                <div class="text">
-                    <h5>Linto beauty, Color Trend AW 2021/2022</h5>
+                <div class="item">
+                    <div>
+                        <img src="img/bestseller/bcart4.jpg" alt="изображение гель-лака в цвете №44" class="bs4">
+                    </div>
+                    <div class="text">
+                        <h5>Beautix, UniGel System №1003</h5>
                     </div>
                     <div class="shop_bar">
-                    <span>1 600 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('cart3')" value="-">
-                        <label for="input"><input id="cart3" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('cart3')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
+                        <span>1200 &#8381;</span> <span class="action_price">1500 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('bcart4')" value="-">
+                            <label for="input"><input id="bcart4" class="counter" type="text" name="number"
+                                    maxlength="2" placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('bcart4')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart4" onclick="wishClick('heart4')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
                     </div>
                 </div>
+                <div class="item">
+                    <div>
+                        <img src="img/new/cart1.jpg" alt="изображение гель-лака в цвете №135">
+                    </div>
+                    <div class="text">
+                        <h5>Linto beauty, GEL POLISH, №135</h5>
+                    </div>
+                    <div class="shop_bar">
+                        <span>520 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('cart1')" value="-">
+                            <label for="input"><input id="cart1" class="counter" type="text" name="number" maxlength="2"
+                                    placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('cart1')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart5" onclick="wishClick('heart5')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <img src="img/new/cart2.jpg" alt="изображение гель-лака в цвете №095">
+                    </div>
+                    <div class="text">
+                        <h5>Linto beauty, GEL POLISH, №095</h5>
+                    </div>
+                    <div class="shop_bar">
+                        <span>520 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('cart2')" value="-">
+                            <label for="input"><input id="cart2" class="counter" type="text" name="number" maxlength="2"
+                                    placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('cart2')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart6" onclick="wishClick('heart6')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <img src="img/new/cart3.jpg" alt="изображение гель-лака тренд 2021/2022" class="pic_cent">
+                    </div>
+                    <div class="text">
+                        <h5>Linto beauty, Color Trend AW 2021/2022</h5>
+                    </div>
+                    <div class="shop_bar">
+                        <span>1 600 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('cart3')" value="-">
+                            <label for="input"><input id="cart3" class="counter" type="text" name="number" maxlength="2"
+                                    placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('cart3')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart7" onclick="wishClick('heart7')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <a href="catalog.html">
+                            <img src="img/new/cart4.jpg" alt="изображение гель-лака в цвете №44">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h5>Linto beauty, GEL POLISH, №44</h5>
+                    </div>
+                    <div class="shop_bar">
+                        <span>520 &#8381;</span>
+                        <div class="amount">
+                            <form action="Buy.php" method="get"></form>
+                        </div>
+                        <div class="lable">
+                            <input class="button_count" type="button" onclick="decr('cart4')" value="-">
+                            <label for="input"><input id="cart4" class="counter" type="text" name="number" maxlength="2"
+                                    placeholder="0"></label>
+                            <input class="button_count" type="button" onclick="incr('cart4')" value="+">
+                        </div>
+                        <div class="menu_bar">
+                            <input class="button" type="button" value="В корзину">
+                            <input id="heart8" onclick="wishClick('heart8')" type="image" src="img/icons/heart.svg"
+                                alt="кнопка Избранное">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <img class="line" src="img/line.png" alt="">
+        <div class="pre-Footer">
+            <div class="footer-menu">
+                <ul>
+                    <li class="title_footer"><a class="title_shop" href="shops.html">Магазины</a></li><br>
+                    <li>г. Пенза, Урицкого/Славы 74/9</li>
+                    <li>тел: 8(967)441&ndash;00&ndash;23</li><br>
+                    <li>г. Пенза, 1&ndash;й пр. Онежского, 4</li>
+                    <li>ТЦ Онежский, 2 этаж</li>
+                    <li>тел: 8(967)442&ndash;85&ndash;35</li>
+                </ul>
+
             </div>
-
-            <div class="item">
-                <div>
-                    <a href="catalog.html">
-                        <img src="img/new/cart4.jpg" alt="изображение гель-лака в цвете №44">
-                    </a>
-                </div>
-                <div class="text">
-                    <h5>Linto beauty, GEL POLISH, №44</h5>
-                </div>
-                <div class="shop_bar">    
-                    <span>520 &#8381;</span>
-                    <div class="amount">
-                        <form action="Buy.php" method="get"></form>
-                    </div>
-                    <div class="lable">
-                        <input class="button_count" type="button" onclick="decr('cart4')" value="-">
-                        <label for="input"><input id="cart4" class="counter" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
-                        <input class="button_count" type="button" onclick="incr('cart4')" value="+">
-                    </div>
-                    <div class="menu_bar">
-                        <input class="button" type="button" value="В корзину">
-                        <input type="image" src="img/icons/heart.svg" alt="кнопка Избранное">
-                    </div>
-                </div>
+            <div class="footer-menu">
+                <ul>
+                    <li class="title_footer">Контакты</li><br>
+                    <li>ditanails@yandex.ru</li><br>
+                    <li>ditanails&ndash;opt@yandex.ru</li><br>
+                    <li>8(967)441&ndash;00&ndash;23</li><br>
+                </ul>
             </div>
-        </section>
-
-
-    </div>
-
-    <img class="line" src="img/line.png" alt="">
-    <div class="pre-Footer">
-        <div class="footer-menu">
-            <ul>
-                <li class="title_footer"><a class="title_shop" href="shops.html">Магазины</a></li><br>
-                <li>г. Пенза, Урицкого/Славы 74/9</li>
-                <li>тел: 8(967)441-00-23</li><br>
-                <li>г. Пенза, 1-й пр. Онежского, 4</li>
-                <li>ТЦ Онежский, 2 этаж</li>
-                <li>тел: 8(967)442-85-35</li>
-            </ul>
-
-        </div>
-        <div class="footer-menu">
-            <ul>
-                <li class="title_footer">Контакты</li><br>
-                <li>ditanails@yandex.ru</li><br>
-                <li>ditanails-opt@yandex.ru</li><br>
-                <li>8(967)441-00-23</li><br>
-            </ul>
-        </div>
-        <div class="footer-menu">
-            <ul>
-                <li class="title_footer">Покупателям</li><br>
-                <li><a href="">Оплата и доставка</a></li>
-                <li><a href="">Возврат</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="Footer">
-        <div class="footer-info">
-            <a href="">Политика конфиденциальности</a>
-        </div>
-        <div class="social-icons-wrapper">
-            <a class="social-icon" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <div class="footer-menu">
+                <ul>
+                    <li class="title_footer">Покупателям</li><br>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Возврат</a></li>
+                </ul>
             </div>
-        <div class="footer-info">
-            <ul>
-                <li>&copy;Slepuhina Natalia </li>
-                <li>Сайт разработан: Natallie Ardyako</li>
-            </ul>
         </div>
-    </div>
+        <div class="Footer">
+            <div class="footer-info">
+                <a href="">Политика конфиденциальности</a>
+            </div>
+            <div class="social-icons-wrapper">
+                <a class="social-icon" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                <a class="social-icon" target="_blank" href="https://twitter.com"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a class="social-icon" target="_blank" href="https://vk.com"><i class="fa fa-vk"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <li>&copy;Slepuhina Natalia </li>
+                    <li>Сайт разработан: Natallie Ardyako</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 

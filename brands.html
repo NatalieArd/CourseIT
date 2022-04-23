@@ -19,253 +19,289 @@
 <body>
 
     <div id="wrapper">
-    <div class="Head">
-        <div class="logo">
-            <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
-                    title="Ditanails"></a>
-        </div>
-        <div class="menu-main">
-            <ul>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="brands.html">Бренды</a></li>
-                <li><a href="brands.html">Палитра</a></li>
-                <li><a href="shops.html">Магазины</a></li>
-                <li><a href="brands.html">Акции</a></li>
-            </ul>
-        </div>
-        <div class="main_icons">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><img src="img/icons/search.svg" alt=""></button>
-                <div id="myDropdown" class="dropdown-content">
-                    <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
-                </div>
-                <!-- <script src="js/script.js"></script> -->
+        <div class="Head">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
+                        title="Ditanails"></a>
             </div>
-            <a href="" target="_blank"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></a>
-            <a href="" target="_blank">
-                <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
-            </a>
-            <a href="" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
+            <div class="menu-main">
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="brands.html">Бренды</a></li>
+                    <li><a href="brands.html">Палитра</a></li>
+                    <li><a href="shops.html">Магазины</a></li>
+                    <li><a href="brands.html">Акции</a></li>
+                </ul>
+            </div>
+            <div class="main_icons">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img src="img/icons/search.svg" alt=""></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
+                    </div>
+                    <script src="js/script.js"></script>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img
+                        src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
+
+                <div id="id01" class="modal">
+
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                        </div>
+
+                        <div class="container">
+                            <label for="uname"><b>Логин</b></label>
+                            <input class="form_reg" type="text" placeholder="Введите Логин" name="uname" required>
+
+                            <label for="psw"><b>Пароль</b></label>
+                            <input class="form_reg" type="password" placeholder="Введите Пароль" name="psw" required>
+
+                            <button class="login" type="submit"><a
+                                    href="successful.html">Зарегистрироваться</a></button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Запомнить
+                            </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Отмена</button>
+                            <span class="psw">Забыли <a href="#">пароль?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <a href="" target="_blank">
+                    <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
+                </a>
+                <a href="shopcart.html" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина"
+                        title="Корзина"></a>
+            </div>
         </div>
-    </div>
-    <div>
+        <div>
+            <img class="line" src="img/line.png" alt="">
+        </div>
+
+        <div class="content">
+            <div class="navigation">
+                <a href="index.html">Главная &mdash;</a><a href="brands.html"> Бренды</a>
+            </div>
+
+            <div class="search_brand">
+                <form id="search-highlight" method="post" action="#">
+                    <p><input class="search_input" type="text" name="term" id="text-to-find" placeholder="Бренд">
+                        <input class="search_button" type="submit" name="submit" onclick="FindOnPage(); return false;"
+                            value="Найти" />
+                    </p>
+                </form>
+
+                <script src="js/script.js"></script>
+            </div>
+            <p class="results"></p>
+
+            <div id="brands">
+                <div class="table">
+                    <div class="cards">
+                        <ul>
+                            <li>0&ndash;9</li><br>
+                            <li><a href="">3 lab</a></li>
+                            <li><a href="">50 Megumi</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="cards">
+                        <ul>
+                            <li>A</li><br>
+                            <li><a href="">Adele</a></li>
+                            <li><a href="">Archdale</a></li>
+                            <li><a href="">Arnelle</a></li>
+                            <li><a href="">Artex</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>B</li><br>
+                            <li><a href="">Bagheera Nails</a></li>
+                            <li><a href="">Be Natural</a></li>
+                            <li><a href="">Beautix</a></li>
+                            <li><a href="">Bloom</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>C</li><br>
+                            <li><a href="">Codyson</a></li>
+                            <li><a href="">Cosmoprofi</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>D</li><br>
+                            <li><a href="">DispoLand</a></li>
+                            <li><a href="">DIVA</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>E</li><br>
+                            <li><a href="">Emil</a></li>
+                            <li><a href="">ENVY</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>F</li><br>
+                            <li><a href="">Fantasy Nails</a></li>
+                            <li><a href="">Farmona</a></li>
+                            <li><a href="">First Gel</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>G</li><br>
+                            <li><a href="">Gellaktik</a></li>
+                            <li><a href="">Global Fashion</a></li>
+                            <li><a href="">Grattol</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>I</li><br>
+                            <li><a href="">IBDI Nails</a></li>
+                            <li><a href="">IBX System</a></li>
+                            <li><a href="">Imen</a></li>
+                            <li><a href="">Ingarden</a></li>
+                            <li><a href="">IRISK</a></li>
+                            <li><a href="">IVA Nails</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>J</li><br>
+                            <li><a href="">Jas</a></li>
+                            <li><a href="">Ju.Bilej</a></li>
+                            <li><a href="">Judi Nails</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>K</li><br>
+                            <li><a href="">Kinetics</a></li>
+                            <li><a href="">KLIO</a></li>
+                            <li><a href="">Kodi</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>L</li><br>
+                            <li><a href="">LAQUE</a></li>
+                            <li><a href="">Lesly</a></li>
+                            <li><a href="">Lianail</a></li>
+                            <li><a href="">LiNTO</a></li>
+                            <li><a href="">Lisanail</a></li>
+                            <li><a href="">Lovely</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>M</li><br>
+                            <li><a href="">Marathon</a></li>
+                            <li><a href="">Memoire</a></li>
+                            <li><a href="">Metaleks</a></li>
+                            <li><a href="">MiLK</a></li>
+                            <li><a href="">MIO Nails</a></li>
+                            <li><a href="">Mirage</a></li>
+                            <li><a href="">Miranda</a></li>
+                            <li><a href="">Monami</a></li>
+                            <li><a href="">My Love</a></li>
+                            <li><a href="">Mystique</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>N</li><br>
+                            <li><a href="">Nail Best</a></li>
+                            <li><a href="">Nail Passion</a></li>
+                            <li><a href="">Nartist</a></li>
+                            <li><a href="">NeoNail</a></li>
+                            <li><a href="">NitriMax</a></li>
+                            <li><a href="">No name</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>O</li><br>
+                            <li><a href="">OneAir</a></li>
+                            <li><a href="">OneNail</a></li>
+                            <li><a href="">ONIQ</a></li>
+                            <li><a href="">Option</a></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul>
+                            <li>P</li><br>
+                            <li><a href="">Pole</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <img class="line" src="img/line.png" alt="">
-    </div>
+        <div class="pre-Footer">
+            <div class="footer-menu">
+                <ul>
+                    <li class="title_footer"><a class="title_shop" href="shops.html">Магазины</a></li><br>
+                    <li>г. Пенза, Урицкого/Славы 74/9</li>
+                    <li>тел: 8(967)441&ndash;00&ndash;23</li><br>
+                    <li>г. Пенза, 1&ndash;й пр. Онежского, 4</li>
+                    <li>ТЦ Онежский, 2 этаж</li>
+                    <li>тел: 8(967)442&ndash;85&ndash;35</li>
+                </ul>
 
-    <div class="content">
-        <div class="navigation">
-            <a href="index.html">Главная/</a><a href="brands.html">Бренды</a>
-        </div>
-
-        <div class="search_brand">
-            <form id="search-highlight" method="post" action="#">
-                <p><input class="search_input" type="text" name="term" id="text-to-find" placeholder="Бренд">
-                    <input class="search_button" type="submit" name="submit"
-                        onclick="FindOnPage(); return false;" value="Найти" />
-                </p>
-            </form>
-
-            <script src="js/script.js"></script>
-        </div>
-        <p class="results"></p>
-
-        <div id="brands">
-            <div class="table">
-                <div class="cards">
-                    <ul>
-                        <li>0-9</li><br>
-                        <li><a href="">3 lab</a></li>
-                        <li><a href="">50 Megumi</a></li>
-                    </ul>
-                </div>
             </div>
-
-            <div class="table">
-                <div class="cards">
-                    <ul>
-                        <li>A</li><br>
-                        <li><a href="">Adele</a></li>
-                        <li><a href="">Archdale</a></li>
-                        <li><a href="">Arnelle</a></li>
-                        <li><a href="">Artex</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>B</li><br>
-                        <li><a href="">Bagheera Nails</a></li>
-                        <li><a href="">Be Natural</a></li>
-                        <li><a href="">Beautix</a></li>
-                        <li><a href="">Bloom</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>C</li><br>
-                        <li><a href="">Codyson</a></li>
-                        <li><a href="">Cosmoprofi</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>D</li><br>
-                        <li><a href="">DispoLand</a></li>
-                        <li><a href="">DIVA</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>E</li><br>
-                        <li><a href="">Emil</a></li>
-                        <li><a href="">ENVY</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>F</li><br>
-                        <li><a href="">Fantasy Nails</a></li>
-                        <li><a href="">Farmona</a></li>
-                        <li><a href="">First Gel</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>G</li><br>
-                        <li><a href="">Gellaktik</a></li>
-                        <li><a href="">Global Fashion</a></li>
-                        <li><a href="">Grattol</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>I</li><br>
-                        <li><a href="">IBDI Nails</a></li>
-                        <li><a href="">IBX System</a></li>
-                        <li><a href="">Imen</a></li>
-                        <li><a href="">Ingarden</a></li>
-                        <li><a href="">IRISK</a></li>
-                        <li><a href="">IVA Nails</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>J</li><br>
-                        <li><a href="">Jas</a></li>
-                        <li><a href="">Ju.Bilej</a></li>
-                        <li><a href="">Judi Nails</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>K</li><br>
-                        <li><a href="">Kinetics</a></li>
-                        <li><a href="">KLIO</a></li>
-                        <li><a href="">Kodi</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>L</li><br>
-                        <li><a href="">LAQUE</a></li>
-                        <li><a href="">Lesly</a></li>
-                        <li><a href="">Lianail</a></li>
-                        <li><a href="">LiNTO</a></li>
-                        <li><a href="">Lisanail</a></li>
-                        <li><a href="">Lovely</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>M</li><br>
-                        <li><a href="">Marathon</a></li>
-                        <li><a href="">Memoire</a></li>
-                        <li><a href="">Metaleks</a></li>
-                        <li><a href="">MiLK</a></li>
-                        <li><a href="">MIO Nails</a></li>
-                        <li><a href="">Mirage</a></li>
-                        <li><a href="">Miranda</a></li>
-                        <li><a href="">Monami</a></li>
-                        <li><a href="">My Love</a></li>
-                        <li><a href="">Mystique</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>N</li><br>
-                        <li><a href="">Nail Best</a></li>
-                        <li><a href="">Nail Passion</a></li>
-                        <li><a href="">Nartist</a></li>
-                        <li><a href="">NeoNail</a></li>
-                        <li><a href="">NitriMax</a></li>
-                        <li><a href="">No name</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>O</li><br>
-                        <li><a href="">OneAir</a></li>
-                        <li><a href="">OneNail</a></li>
-                        <li><a href="">ONIQ</a></li>
-                        <li><a href="">Option</a></li>
-                    </ul>
-                </div>
-                <div class="cards">
-                    <ul>
-                        <li>P</li><br>
-                        <li><a href="">Pole</a></li>
-                    </ul>
-                </div>
+            <div class="footer-menu">
+                <ul>
+                    <li class="title_footer">Контакты</li><br>
+                    <li>ditanails@yandex.ru</li><br>
+                    <li>ditanails&ndash;opt@yandex.ru</li><br>
+                    <li>8(967)441&ndash;00&ndash;23</li><br>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li class="title_footer">Покупателям</li><br>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Возврат</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="footer-info">
+                <a href="">Политика конфиденциальности</a>
+            </div>
+            <div class="social-icons-wrapper">
+                <a class="social-icon" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+                <a class="social-icon" target="_blank" href="https://twitter.com"><i class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+                <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a class="social-icon" target="_blank" href="https://vk.com"><i class="fa fa-vk"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <li>&copy;Slepuhina Natalia </li>
+                    <li>Сайт разработан: Natallie Ardyako</li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <img class="line" src="img/line.png" alt="">
-    <div class="pre-Footer">
-        <div class="footer-menu">
-            <ul>
-                <li class="title_footer"><a class="title_shop" href="shops.html">Магазины</a></li><br>
-                <li>г. Пенза, Урицкого/Славы 74/9</li>
-                <li>тел: 8(967)441-00-23</li><br>
-                <li>г. Пенза, 1-й пр. Онежского, 4</li>
-                <li>ТЦ Онежский, 2 этаж</li>
-                <li>тел: 8(967)442-85-35</li>
-            </ul>
-
-        </div>
-        <div class="footer-menu">
-            <ul>
-                <li class="title_footer">Контакты</li><br>
-                <li>ditanails@yandex.ru</li><br>
-                <li>ditanails-opt@yandex.ru</li><br>
-                <li>8(967)441-00-23</li><br>
-            </ul>
-        </div>
-        <div class="footer-menu">
-            <ul>
-                <li class="title_footer">Покупателям</li><br>
-                <li><a href="">Оплата и доставка</a></li>
-                <li><a href="">Возврат</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="Footer">
-        <div class="footer-info">
-            <a href="">Политика конфиденциальности</a>
-        </div>
-        <div class="social-icons-wrapper">
-            <a class="social-icon" target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            </div>
-        <div class="footer-info">
-            <ul>
-                <li>&copy;Slepuhina Natalia </li>
-                <li>Сайт разработан: Natallie Ardyako</li>
-            </ul>
-        </div>
-    </div>
-</div>
 </body>
 
 </html>
