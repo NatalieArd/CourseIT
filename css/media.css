@@ -58,6 +58,7 @@
     .modal-content {
         letter-spacing: none !important;
         text-align: start;
+        min-width: 400px;
     }
 }
 

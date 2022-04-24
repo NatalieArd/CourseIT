@@ -99,11 +99,11 @@ button {
   width: 100%;
 }
 
-.dropbtn {
+/* .dropbtn {
   background-color: white;
   border: none;
   cursor: pointer;
-}
+} */
 
 #myInput {
   box-sizing: border-box;
@@ -114,14 +114,14 @@ button {
   border-bottom: 1px solid #ddd;
 }
 
-#myInput:focus {
+/* #myInput:focus {
   outline: 3px solid #ddd;
-}
+} */
 
-.dropdown {
+/* .dropdown {
   position: relative;
   display: inline-block;
-}
+} */
 
 .dropdown-content {
   display: none;
@@ -132,23 +132,21 @@ button {
   border: 1px solid #ddd;
   z-index: 1;
 }
-
+/* 
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-}
+} */
 
-.dropdown a:hover {
+/* .dropdown a:hover {
   background-color: #ddd;
-}
+} */
 
 .show {
   display: block;
 }
-
-/* !!!!!! */
 
 .icon_heart:hover {
   background: url("../img/icons/heart_active.svg") no-repeat;
@@ -623,12 +621,15 @@ span.psw {
   padding-top: 60px;
 }
 
+.modal *, ::after, ::before {
+  box-sizing: border-box;
+}
+
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
   max-width: 40%;
-
 }
 
 .close {
@@ -688,11 +689,6 @@ span.psw {
   text-align: center;
   width: 80%;
   grid-gap: 20px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);  */
   margin: 0 10% 0 10%;
 
 }
@@ -768,4 +764,7 @@ span.psw {
 .finish_count {
   height: 20px;
   border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 16px;
 }
