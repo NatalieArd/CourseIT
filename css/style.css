@@ -112,6 +112,7 @@ button {
   padding: 10px 85px 10px 10px;
   border: none;
   border-bottom: 1px solid #ddd;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* #myInput:focus {
