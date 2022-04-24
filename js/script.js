@@ -1,4 +1,4 @@
-// Когда пользователь нажимает на кнопку, переключаться раскрывает содержимое */
+
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -19,20 +19,20 @@ function filterFunction() {
 	}
 }
 
-var lastResFind = ""; // последний удачный результат
-var copy_page = ""; // копия страницы в ихсодном виде
+var lastResFind = ""; 
+var copy_page = ""; 
 function TrimStr(s) {
 	s = s.replace(/^\s+/g, '');
 	return s.replace(/\s+$/g, '');
 }
 
-function FindOnPage() { //ищет текст на странице, в параметр передается ID поля для ввода
+function FindOnPage() { 
 
 	var obj = window.document.getElementById('text-to-find');
 	var textToFind;
 
 	if (obj) {
-		textToFind = TrimStr(obj.value).toLocaleLowerCase(); //обрезаем пробелы
+		textToFind = TrimStr(obj.value).toLocaleLowerCase(); 
 	} else {
 		alert("Введенная фраза не найдена");
 		return;
@@ -63,16 +63,13 @@ function FindOnPage() { //ищет текст на странице, в пара
 
 }
 
-// Get the modal
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
 	}
 }
-
 
 function incr(id) {
 	var el = document.getElementById(id);

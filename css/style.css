@@ -2,6 +2,15 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  margin: 8px;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
 #wrapper {
   max-width: 1170px;
   padding-left: 16px;
@@ -42,7 +51,6 @@ html {
   vertical-align: top;
 }
 
-/* .menu-main li:last-child:after {content: none;} */
 .menu-main a {
   text-decoration: none;
   letter-spacing: 2px;
@@ -51,7 +59,9 @@ html {
   font-size: 13px;
   text-transform: uppercase;
   display: inline-block;
-  transition: color .2s;
+  -o-transition: color .2s;
+  -moz-transition: color .2s;
+  -webkit-transition: color .2s;
 }
 
 .menu-main a,
@@ -69,7 +79,9 @@ html {
   bottom: -5px;
   left: 50%;
   background: #606060;
-  transition: .8s;
+  -o-transition: .8s;
+  -moz-transition: .8s;
+  -webkit-transition: .8s;
 }
 
 .menu-main a:hover:before,
@@ -90,8 +102,10 @@ html {
 }
 
 button {
+  background-color: white;
   border: none;
-  background: white;
+  cursor: pointer;
+  width: 100%;
 }
 
 .dropbtn {
@@ -270,7 +284,7 @@ a.social:hover {
 
 .frame1 {
   position: absolute;
-  width: 26%;
+  width: 22%;
 }
 
 .frame2 {
@@ -286,12 +300,9 @@ a.social:hover {
 .pic {
   position: relative;
   overflow: hidden;
-  width: 305px;
-  height: 305px;
-
-}
-
-.pic {
+  width: 100%;
+   max-width: 20vw; 
+  height: auto;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   -webkit-transition: all 1s ease-out;
@@ -325,6 +336,7 @@ a.social:hover {
 
 .footer-menu a {
   color: black;
+  text-decoration: none;
 }
 
 .Footer {
@@ -358,14 +370,6 @@ a.social:hover {
 
 .social-icons {
   display: inline-block;
-  /* height: 40px;
-  width: 40px; */
-  /* border-radius: 50%; */
-  /*  margin: 20px 50px 0;
-   color: #606066; */
-  /* background-color: rgba(20, 20, 20, 0);
-   transform: scale(1);
-   transition: .3s linear; */
 }
 
 i {
@@ -483,7 +487,7 @@ span {
   padding-right: 10px;
 }
 
-.button {
+.buttonBlack {
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -496,7 +500,9 @@ span {
   background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
   background-size: 200% auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
 }
 
 .button:hover {
@@ -517,7 +523,9 @@ span {
   background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
   background-size: 60% auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
 }
 
 .button_count:hover {
@@ -560,13 +568,6 @@ span {
   box-sizing: border-box;
 }
 
-button {
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
 .login {
   text-decoration: none;
   display: inline-block;
@@ -579,7 +580,9 @@ button {
   background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
   background-size: 200% auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, .1);
-  transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
 }
 
 .login a {
@@ -687,12 +690,6 @@ span.psw {
   display: none;
 }
 
-@media (max-width: 1055px) {
-  .carousel {
-    display: block;
-  }
 
-  .table_catalog {
-    display: none;
-  }
-}
+
+

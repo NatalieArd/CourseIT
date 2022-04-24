@@ -72,3 +72,13 @@
         text-align: start;
     }
 }
+
+@media (max-width: 1055px) {
+    .carousel {
+      display: block;
+    }
+  
+    .table_catalog {
+      display: none;
+    }
+  }
