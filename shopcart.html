@@ -23,7 +23,7 @@
     <div id="wrapper">
         <div class="Head">
             <div class="logo">
-                <a href="index.html"><img src="img/logo black 1.svg" alt="изображение логотипа Ditanails"
+                <a href="index.html"><img src="img/logo_black.svg" alt="изображение логотипа Ditanails"
                         title="Ditanails"></a>
             </div>
             <div class="menu-main">
@@ -98,7 +98,7 @@
                     <div>Linto beauty, GEL POLISH, №135</div>
                     <div class="lable2">
                         <input class="button_count2" type="button" onclick="decr('cart1')" value="-">
-                        <label for="input"><input id="cart3" class="counter2" type="text" name="number" maxlength="2"
+                        <label for="input"><input id="cart1" class="counter2" type="text" name="number" maxlength="2"
                                 placeholder="0"></label>
                         <input class="button_count2" type="button" onclick="incr('cart1')" value="+">
                     </div>
@@ -106,11 +106,11 @@
                     <div><button><i class="fa fa-trash" aria-hidden="true"></i></button></div>
                 </div>
                 <div class="shop_list">
-                    <div class="shop_item"><img src="img/bestseller/bcart2..jpg" alt=""></div>
+                    <div class="shop_item"><img src="img/bestseller/bcart2.jpg" alt=""></div>
                     <div>Linto beauty, BASE RUBBER (15)</div>
                     <div class="lable2">
                         <input class="button_count2" type="button" onclick="decr('cart2')" value="-">
-                        <label for="input"><input id="cart3" class="counter2" type="text" name="number" maxlength="2"
+                        <label for="input"><input id="cart2" class="counter2" type="text" name="number" maxlength="2"
                                 placeholder="0"></label>
                         <input class="button_count2" type="button" onclick="incr('cart2')" value="+">
                     </div>
@@ -129,6 +129,12 @@
                     <div class="price">520 &#8381;</div>
                     <div><button><i class="fa fa-trash" aria-hidden="true"></i></button></div>
                 </div>
+                <div class="sum">
+                    <span>Итого:</span>
+                        <label for="summary"><input id="summary" class="finish_count" type="text" name="number" maxlength="6"></label>
+                        <span>&#8381;</span>
+                    </div>
+                
                 <div>
                     <input class="win" type="button" value="Купить">
                     </form>
@@ -183,6 +189,8 @@
         </div>
 
     </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 

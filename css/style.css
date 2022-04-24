@@ -214,10 +214,6 @@ h1 {
   background: none;
 }
 
-.long_hand:hover {
-  background: #dfdede;
-}
-
 .price {
   min-width: 95px;
 }
@@ -491,6 +487,7 @@ span {
   text-decoration: none;
   display: inline-block;
   color: white;
+  border-radius: 3px;
   padding: 10px 20px;
   margin: 10px 20px;
   font-family: 'Montserrat', sans-serif;
@@ -510,6 +507,7 @@ span {
   text-decoration: none;
   display: inline-block;
   color: white;
+  border-radius: 3px;
   font-size: 13px;
   font-weight: bold;
   padding: 2px 10px;
@@ -570,19 +568,25 @@ button {
 }
 
 .login {
-  background-color: #606060;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
   width: 100%;
-
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
 }
 
 .login a {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: white;
 }
 
 button:hover {
@@ -593,6 +597,7 @@ button:hover {
   width: auto;
   padding: 10px 18px;
   background-color: #dfdede;
+  border-radius: 2px;
 }
 
 .imgcontainer {
@@ -669,5 +674,25 @@ span.psw {
 
   to {
     transform: scale(1)
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+  filter: invert(100%);
+}
+
+.carousel {
+  display: none;
+}
+
+@media (max-width: 1055px) {
+  .carousel {
+    display: block;
+  }
+
+  .table_catalog {
+    display: none;
   }
 }

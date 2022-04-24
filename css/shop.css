@@ -23,7 +23,7 @@
    
 }
 
-.lable {
+.lable2 {
     display: grid;
     align-items:center;
     grid-template-columns: 25px 25px 25px;
@@ -63,3 +63,27 @@
 .win:hover {
     background-position: right center;
   }
+
+.sum {
+    display: block;
+    text-align: right;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+  /* font-size: 40px; */
+  font-weight: bold;
+  border: solid #dfdede 1px;
+  padding: 10px 10px 10px 0px;
+  background: #dfdede;
+
+}
+
+.sum span {
+font-size: 20px;
+}
+
+.finish_count {
+/* font-size: 20px; */
+height: 20px;
+border-radius: 5px;
+}
+
