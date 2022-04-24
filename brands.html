@@ -8,9 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100&family=Pacifico&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>DITANAIL</title>
@@ -21,8 +19,7 @@
     <div id="wrapper">
         <div class="Head">
             <div class="logo">
-                <a href="index.html"><img src="img/logo_black.svg" alt="изображение логотипа Ditanails"
-                        title="Ditanails"></a>
+                <a href="index.html"><img src="img/logo_black.svg" alt="изображение логотипа Ditanails" title="Ditanails"></a>
             </div>
             <div class="menu-main">
                 <ul>
@@ -41,15 +38,13 @@
                     </div>
                     <script src="js/script.js"></script>
                 </div>
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img
-                        src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img src="img/icons/log.svg" alt="иконка Войти" title="Войти"></button>
 
                 <div id="id01" class="modal">
 
                     <form class="modal-content animate" action="/action_page.php" method="post">
                         <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                title="Close Modal">&times;</span>
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                         </div>
 
                         <div class="container">
@@ -66,8 +61,7 @@
                         </div>
 
                         <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Отмена</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
                             <span class="psw">Забыли <a href="#">пароль?</a></span>
                         </div>
                     </form>
@@ -75,12 +69,12 @@
                 <a href="" target="_blank">
                     <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
                 </a>
-                <a href="shopcart.html" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
+                <a href="shopcart.html"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
             </div>
         </div>
-        <div>
+        
             <img class="line" src="img/line.png" alt="">
-        </div>
+       
 
         <div class="content">
             <div class="navigation">
@@ -90,8 +84,7 @@
             <div class="search_brand">
                 <form id="search-highlight" method="post" action="#">
                     <p><input class="search_input" type="text" name="term" id="text-to-find" placeholder="Бренд">
-                        <input class="search_button" type="submit" name="submit" onclick="FindOnPage(); return false;"
-                            value="Найти" />
+                        <input class="search_button" type="submit" name="submit" onclick="FindOnPage(); return false;" value="Найти" />
                     </p>
                 </form>
 

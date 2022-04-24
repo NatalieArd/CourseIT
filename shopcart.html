@@ -8,17 +8,14 @@
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@100&family=Pacifico&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/shop.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <title>DITANAIL</title>
 </head>
 
-<body>
+<body onload="summFunc();">
 
     <div id="wrapper">
         <div class="Head">
@@ -78,8 +75,7 @@
                 <a href="" target="_blank">
                     <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
                 </a>
-                <a href="shopcart.html" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина"
-                        title="Корзина"></a>
+                <a href="shopcart.html"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
             </div>
         </div>
 
@@ -99,7 +95,7 @@
                     <div class="lable2">
                         <input class="button_count2" type="button" onclick="decr('cart1')" value="-">
                         <label for="input"><input id="cart1" class="counter2" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
+                                value="1"></label>
                         <input class="button_count2" type="button" onclick="incr('cart1')" value="+">
                     </div>
                     <div class="price">520 &#8381;</div>
@@ -111,10 +107,10 @@
                     <div class="lable2">
                         <input class="button_count2" type="button" onclick="decr('cart2')" value="-">
                         <label for="input"><input id="cart2" class="counter2" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
+                                value="1"></label>
                         <input class="button_count2" type="button" onclick="incr('cart2')" value="+">
                     </div>
-                    <div class="price">700 &#8381;</span> <span class="action_price">850 &#8381;</div>
+                    <div class="price">700 &#8381;</div>
                     <div><button><i class="fa fa-trash" aria-hidden="true"></i></button></div>
                 </div>
                 <div class="shop_list">
@@ -123,7 +119,7 @@
                     <div class="lable2">
                         <input class="button_count2" type="button" onclick="decr('cart3')" value="-">
                         <label for="cart3"><input id="cart3" class="counter2" type="text" name="number" maxlength="2"
-                                placeholder="0"></label>
+                                value="1"></label>
                         <input class="button_count2" type="button" onclick="incr('cart3')" value="+">
                     </div>
                     <div class="price">520 &#8381;</div>
@@ -131,10 +127,11 @@
                 </div>
                 <div class="sum">
                     <span>Итого:</span>
-                        <label for="summary"><input id="summary" class="finish_count" type="text" name="number" maxlength="6"></label>
-                        <span>&#8381;</span>
-                    </div>
-                
+                    <label for="summary"><input id="summary" class="finish_count" type="text" name="number"
+                            maxlength="6" value="0"></label>
+                    <span>&#8381;</span>
+                </div>
+
                 <div>
                     <input class="win" type="button" value="Купить">
                     </form>

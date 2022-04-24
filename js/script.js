@@ -1,9 +1,8 @@
-
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function filterFunction() {
+/*function filterFunction() {
 	var input, filter, ul, li, a, i;
 	input = document.getElementById("myInput");
 	filter = input.value.toUpperCase();
@@ -17,22 +16,23 @@ function filterFunction() {
 			a[i].style.display = "none";
 		}
 	}
-}
+} */
 
-var lastResFind = ""; 
-var copy_page = ""; 
+var lastResFind = "";
+var copy_page = "";
+
 function TrimStr(s) {
 	s = s.replace(/^\s+/g, '');
 	return s.replace(/\s+$/g, '');
 }
 
-function FindOnPage() { 
+function FindOnPage() {
 
 	var obj = window.document.getElementById('text-to-find');
 	var textToFind;
 
 	if (obj) {
-		textToFind = TrimStr(obj.value).toLocaleLowerCase(); 
+		textToFind = TrimStr(obj.value).toLocaleLowerCase();
 	} else {
 		alert("Введенная фраза не найдена");
 		return;
@@ -74,19 +74,39 @@ window.onclick = function (event) {
 function incr(id) {
 	var el = document.getElementById(id);
 	var numb = el.value;
-if (numb<99)
-	numb++;
+	if (numb < 99)
+		numb++;
 	el.value = numb;
+
+	summFunc();
 }
 
 function decr(id) {
 	var el = document.getElementById(id);
 	var numb = el.value;
-if (numb>0)
-	numb--;
+	if (numb > 0)
+		numb--;
 	el.value = numb;
 
+	summFunc();
 }
+
+function summFunc() {
+	var sum = document.getElementById('summary');
+  
+	var result = 0;
+  
+	if (sum != null) {
+	  var prices = document.getElementsByClassName('price');
+	  var count = document.getElementsByClassName('counter2');
+  
+	  for (var i = 0; i < prices.length; i++) {
+		result += +(prices[i].innerText.substring(0, prices[0].innerText.length - 2)) * count[i].value;
+	  }
+  
+	  sum.value = result;
+	}
+  }
 
 function wishClick(id) {
 	var el = document.getElementById(id);

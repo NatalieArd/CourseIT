@@ -2,15 +2,6 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  margin: 8px;
-}
-
-ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
 #wrapper {
   max-width: 1170px;
   padding-left: 16px;
@@ -66,7 +57,7 @@ ul {
 
 .menu-main a,
 .menu-main a:visited {
-  color: black
+  color: black;
 }
 
 .menu-main a:before,
@@ -78,7 +69,7 @@ ul {
   right: 50%;
   bottom: -5px;
   left: 50%;
-  background: #606060;
+  background: black;
   -o-transition: .8s;
   -moz-transition: .8s;
   -webkit-transition: .8s;
@@ -157,10 +148,11 @@ button {
   display: block;
 }
 
+/* !!!!!! */
+
 .icon_heart:hover {
   background: url("../img/icons/heart_active.svg") no-repeat;
 }
-
 
 .line {
   width: 100%;
@@ -171,7 +163,6 @@ button {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   min-height: calc(100vh - 350px);
-
 }
 
 h1 {
@@ -301,7 +292,7 @@ a.social:hover {
   position: relative;
   overflow: hidden;
   width: 100%;
-   max-width: 20vw; 
+  max-width: 20vw;
   height: auto;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
@@ -690,6 +681,91 @@ span.psw {
   display: none;
 }
 
+.shopping_cart {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 80%;
+  grid-gap: 20px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);  */
+  margin: 0 10% 0 10%;
 
+}
 
+.shop_list {
+  display: grid;
+  grid-template-columns: 100px 4fr 1fr 1fr 1fr;
+  align-items: center;
+  border: solid #dfdede 1px;
+  border-radius: 5px;
+  position: relative;
 
+}
+
+.lable2 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 25px 25px 25px;
+  justify-content: center;
+}
+
+.lable2 {
+  min-width: 76px;
+  margin: 5px 5px;
+}
+
+.shop_item img {
+  width: 100px;
+}
+
+.counter2 {
+  pointer-events: none;
+  width: 15px;
+  text-align: center;
+}
+
+.win {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #606060 0%, black 51%, #606060 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+
+}
+
+.win:hover {
+  background-position: right center;
+}
+
+.sum {
+  display: block;
+  text-align: right;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border: solid #dfdede 1px;
+  padding: 10px 10px 10px 0px;
+  background: #dfdede;
+}
+
+.sum span {
+  font-size: 20px;
+}
+
+.finish_count {
+  height: 20px;
+  border-radius: 5px;
+}

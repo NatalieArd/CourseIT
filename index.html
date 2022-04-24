@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootscorect.css">
 
     <title>DITANAIL</title>
 </head>
 
-<body>
+<body class="bodyback">
 
     <div id="wrapper">
         <div class="Head">
@@ -40,7 +40,7 @@
                     <button onclick="myFunction()" class="dropbtn"><img src="img/icons/search.svg" alt=""></button>
                     <div id="myDropdown" class="dropdown-content">
                         <input type="text" placeholder="Поиск.." id="myInput" onkeyup="filterFunction()">
-                    </div>
+                    </div>  <!--  НАСТРОИТЬ ИЛИ УДАЛИТЬ ПОИСК -->
                     <!-- <script src="js/script.js"></script> -->
                 </div>
                 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><img
@@ -50,29 +50,24 @@
 
                     <form class="modal-content animate" action="/action_page.php" method="post">
                         <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                title="Close Modal">&times;</span>
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                         </div>
 
                         <div class="container">
                             <label for="uname"><b>Логин</b></label>
-                            <input id="uname" class="form_reg" type="text" placeholder="Введите Логин" name="uname"
-                                required>
+                            <input id="uname" class="form_reg" type="text" placeholder="Введите Логин" name="uname" required>
 
                             <label for="psw"><b>Пароль</b></label>
-                            <input id="psw" class="form_reg" type="password" placeholder="Введите Пароль" name="psw"
-                                required>
+                            <input id="psw" class="form_reg" type="password" placeholder="Введите Пароль" name="psw" required>
 
-                            <button class="login" type="submit"><a
-                                    href="successful.html">Зарегистрироваться</a></button>
+                            <button class="login" type="submit"><a href="successful.html">Зарегистрироваться</a></button>
                             <label>
                                 <input type="checkbox" checked="checked" name="remember"> Запомнить
                             </label>
                         </div>
 
                         <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Отмена</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
                             <span class="psw">Забыли <a href="#">пароль?</a></span>
                         </div>
                     </form>
@@ -80,13 +75,12 @@
                 <a href="" target="_blank">
                     <img class="icon_heart" src="img/icons/heart.svg" alt="иконка Избранное" title="Избранное">
                 </a>
-                <a href="shopcart.html" target="_blank"><img src="img/icons/bag.svg" alt="иконка Корзина"
-                        title="Корзина"></a>
+                <a href="shopcart.html"><img src="img/icons/bag.svg" alt="иконка Корзина" title="Корзина"></a>
             </div>
         </div>
-        <div>
+ 
             <img class="line" src="img/line.png" alt="изображение горизонтальной линии">
-        </div>
+   
         <div class="content">
             <h1>Скидки на средства <br> для ухода за кожей</h1>
             <a class="list_catalog" href="catalog.html">перейти в каталог</a>

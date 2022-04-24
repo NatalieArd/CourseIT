@@ -19,14 +19,6 @@
         text-align: center;
     }
 
-    /*  .main_icons {
-        width: 100%;
-        justify-content: center; 
-        letter-spacing: 20px; 
-        align-items: center; 
-        text-align: center; 
-    } */
-
     .pre-Footer {
         flex-direction: column;
         flex-wrap: wrap;
@@ -34,13 +26,9 @@
         text-align: center;
     }
 
-    /*  .search_input {
-        width: 200px;
-      } */
     .action_list {
         flex-direction: column;
         justify-content: space-around;
-        /* align-content: stretch; */
         align-items: center;
     }
 
@@ -75,10 +63,10 @@
 
 @media (max-width: 1055px) {
     .carousel {
-      display: block;
+        display: block;
     }
-  
+
     .table_catalog {
-      display: none;
+        display: none;
     }
-  }
+}
